@@ -1,0 +1,251 @@
+.icon-arrow-down {
+  background-image: url(../../img/sprite.png);
+  background-position: -296px -144px;
+  width: 22px;
+  height: 14px; }
+
+.icon-arrow-left {
+  background-image: url(../../img/sprite.png);
+  background-position: -306px -123px;
+  width: 12px;
+  height: 19px; }
+
+.icon-arrow-right {
+  background-image: url(../../img/sprite.png);
+  background-position: -285px -182px;
+  width: 12px;
+  height: 19px; }
+
+.icon-bell-musical-tool {
+  background-image: url(../../img/sprite.png);
+  background-position: -42px -234px;
+  width: 39px;
+  height: 44px; }
+
+.icon-call-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: -108px -130px;
+  width: 51px;
+  height: 48px; }
+
+.icon-call-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -57px -130px;
+  width: 51px;
+  height: 48px; }
+
+.icon-checkbox-green {
+  background-image: url(../../img/sprite.png);
+  background-position: -296px -171px;
+  width: 11px;
+  height: 11px; }
+
+.icon-checkbox-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: -298px -201px;
+  width: 13px;
+  height: 13px; }
+
+.icon-checkbox-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -285px -201px;
+  width: 13px;
+  height: 13px; }
+
+.icon-checked {
+  background-image: url(../../img/sprite.png);
+  background-position: -285px -123px;
+  width: 21px;
+  height: 21px; }
+
+.icon-doctor-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: -82px -278px;
+  width: 40px;
+  height: 38px; }
+
+.icon-doctor-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -42px -278px;
+  width: 40px;
+  height: 38px; }
+
+.icon-dots {
+  background-image: url(../../img/sprite.png);
+  background-position: -285px -144px;
+  width: 11px;
+  height: 38px; }
+
+.icon-facebook {
+  background-image: url(../../img/sprite.png);
+  background-position: -285px -214px;
+  width: 10px;
+  height: 14px; }
+
+.icon-fifteen {
+  background-image: url(../../img/sprite.png);
+  background-position: -74px -79px;
+  width: 61px;
+  height: 49px; }
+
+.icon-girl {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -79px;
+  width: 74px;
+  height: 51px; }
+
+.icon-heart-care {
+  background-image: url(../../img/sprite.png);
+  background-position: -234px -167px;
+  width: 48px;
+  height: 39px; }
+
+.icon-home {
+  background-image: url(../../img/sprite.png);
+  background-position: -234px 0px;
+  width: 51px;
+  height: 39px; }
+
+.icon-hospital-ambulance {
+  background-image: url(../../img/sprite.png);
+  background-position: -81px -234px;
+  width: 51px;
+  height: 33px; }
+
+.icon-hospital-buildings {
+  background-image: url(../../img/sprite.png);
+  background-position: -147px -186px;
+  width: 54px;
+  height: 38px; }
+
+.icon-hospital-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: -285px 0px;
+  width: 39px;
+  height: 42px; }
+
+.icon-hospital-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -285px -42px;
+  width: 39px;
+  height: 42px; }
+
+.icon-man {
+  background-image: url(../../img/sprite.png);
+  background-position: -180px -60px;
+  width: 49px;
+  height: 61px; }
+
+.icon-massage-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: -97px -186px;
+  width: 50px;
+  height: 42px; }
+
+.icon-massage-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -47px -186px;
+  width: 50px;
+  height: 42px; }
+
+.icon-med-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: -159px -130px;
+  width: 47px;
+  height: 48px; }
+
+.icon-med-white {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -186px;
+  width: 47px;
+  height: 48px; }
+
+.icon-medic-suitcase {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -278px;
+  width: 42px;
+  height: 38px; }
+
+.icon-nurse-attends {
+  background-image: url(../../img/sprite.png);
+  background-position: -234px -39px;
+  width: 42px;
+  height: 46px; }
+
+.icon-pipette-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: -234px -85px;
+  width: 47px;
+  height: 41px; }
+
+.icon-pipette-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -234px -126px;
+  width: 47px;
+  height: 41px; }
+
+.icon-planet {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -130px;
+  width: 57px;
+  height: 56px; }
+
+.icon-plus-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -234px;
+  width: 42px;
+  height: 44px; }
+
+.icon-plus-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -135px -79px;
+  width: 42px;
+  height: 44px; }
+
+.icon-quote-after {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 90px;
+  height: 79px; }
+
+.icon-quote-before {
+  background-image: url(../../img/sprite.png);
+  background-position: -90px 0px;
+  width: 90px;
+  height: 79px; }
+
+.icon-star-orange {
+  background-image: url(../../img/sprite.png);
+  background-position: -122px -278px;
+  width: 40px;
+  height: 37px; }
+
+.icon-star-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -162px -278px;
+  width: 40px;
+  height: 37px; }
+
+.icon-stethoscope {
+  background-image: url(../../img/sprite.png);
+  background-position: -180px 0px;
+  width: 54px;
+  height: 60px; }
+
+.icon-tablet-and-pill {
+  background-image: url(../../img/sprite.png);
+  background-position: -285px -84px;
+  width: 36px;
+  height: 39px; }
+
+.icon-twitter {
+  background-image: url(../../img/sprite.png);
+  background-position: -296px -158px;
+  width: 19px;
+  height: 13px; }
+
+.icon-vk {
+  background-image: url(../../img/sprite.png);
+  background-position: -297px -182px;
+  width: 18px;
+  height: 12px; }
