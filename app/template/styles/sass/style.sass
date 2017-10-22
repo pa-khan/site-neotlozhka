@@ -1,0 +1,228 @@
+/* Including styles files */
+@import sprite.sass
+
+
+/* Including fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600')
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400')
+
+
+
+/* Global settings */
+$font-size: 16px
+$font-family-1: 'Open Sans', sans-serif
+$font-family-2: 'Ubuntu', sans-serif
+$color-1: #2c2c2c
+
+
+
+*
+  padding: 0
+  margin: 0
+  border: 0
+  box-sizing: border-box
+
+body
+  font-size: $font-size
+  font-family: $font-family-1
+  color: $color-1
+  background: white
+
+header, nav, main, section, article, aside, footer, li, .block
+  display: block
+
+.inline-block
+  display: inline-block
+
+.hidden
+  display: none
+
+
+
+h1, h2, h3, h4, h5, h6
+  font-size: inherit
+  font-weight: inherit
+
+
+ul
+  font-size: 0
+  li
+    display: inline-block
+    font-size: $font-size
+    list-style-type: none
+
+
+a
+  color: $color-1
+  text-decoration: none
+  border-bottom: 1px solid transparent
+  transition: border-bottom color .3s
+
+
+.icon
+  display: inline-block
+  vertical-align: middle
+
+.input, .button, .slick-slide
+  outline: none
+
+/* Grid */
+.container
+  width: (1140px + 30px)
+  padding-left: 15px
+  padding-right: 15px
+
+.row, .clearfix
+  &:before, &:after
+    display: table
+    content: ''
+    box-sizing: border-box
+  &:after
+    clear: both
+
+.row_line
+  text-align: center
+  font-size: 0
+
+.col
+  float: left
+  display: block
+  min-height: 1px
+  &_line
+    min-height: 1px
+    display: inline-block
+    vertical-align: top
+    font-size: $font-size
+  &-1
+    width: (100% / 1)
+  &-2
+    width: (100% / 2)
+  &-3
+    width: (100% / 3)
+  &-4
+    width: (100% / 4)
+  &-5
+    width: (100% / 5)
+
+
+
+
+
+
+/* Form elements */
+.input
+  display: block
+  font-size: $font-size
+  font-family: $font-family-1
+  background: white
+  width: 100%
+  &::placeholder
+    color: #878686
+
+.textarea
+  font-size: $font-size
+  font-family: $font-family-1
+  display: block
+  background: white
+  resize: none
+  border: 1px solid #f0f0f0
+  &::placeholder
+    color: #878686
+
+
+.button
+  position: relative
+  display: block
+  font-size: $font-size
+  font-family: $font-family-1
+  cursor: pointer
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+  transition: .3s
+  font-weight: 600
+  border-radius: 25px
+  color: white
+  &_red
+    background-color: #d94409
+  &_orange
+    background-color: #f3821c
+
+
+
+.input, .textarea
+  transition: border-color .3s
+
+
+
+
+/* Blocks align */
+.left
+  float: left
+
+.right
+  float: right
+
+.center, .container
+  margin-left: auto
+  margin-right: auto
+
+
+
+
+.panel
+  padding-top: 31px
+  padding-bottom: 17px
+  &__nav
+    padding-top: 17px
+    margin-left: 91px
+    li
+      margin-right: 28px
+      &:last-of-type
+        margin-right: 0
+  &__call
+    float: right
+    text-align: center
+    margin-right: 50px
+  &__phone
+    margin-bottom: 9px
+    a
+      border-bottom: 2px dotted #2e8d02
+  &__button
+    line-height: 48px
+    width: 180px
+
+
+
+.header
+
+.slider
+
+.slide
+  color: white
+  background-position: center top
+  background-repeat: no-repeat
+  padding-top: 130px
+  padding-bottom: 120px
+  &__title
+    font-size: 38px
+    line-height: 42px
+    margin-bottom: 25px
+  &__subtitle
+    font-size: 24px
+    margin-bottom: 24px
+  &__desc
+    font-weight: 300
+    margin-bottom: 45px
+  &__button
+    width: 260px
+    line-height: 70px
+    font-size: 26px
+    margin-left: 0
+    box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.28)
+    margin-bottom: 32px
+  &__text
+    position: relative
+    margin-left: auto
+    width: 195px
+    font-style: italic
