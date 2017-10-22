@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ff5c1f6-b25a-4bc7-9227-370d965d9413" name="Default" comment="Styling (desktop) 2/3">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/template/img/icons/hospital-ambulance--1-.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/img/bg/consultation.png" afterPath="$PROJECT_DIR$/app/template/img/bg/consultation.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/img/bg/lines-5.png" afterPath="$PROJECT_DIR$/app/template/img/bg/lines-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/img/bg/review-back.png" afterPath="$PROJECT_DIR$/app/template/img/bg/review-back.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/img/bg/share.png" afterPath="$PROJECT_DIR$/app/template/img/bg/share.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/sprite/sprite.png" afterPath="$PROJECT_DIR$/app/template/sprite/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lines-3.png" afterPath="$PROJECT_DIR$/assets/lines-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/lines-5.png" afterPath="$PROJECT_DIR$/assets/lines-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/scripts/common.js" afterPath="$PROJECT_DIR$/app/template/scripts/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/scripts/libs.js" afterPath="$PROJECT_DIR$/app/template/scripts/libs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/sprite/sprite.sass" afterPath="$PROJECT_DIR$/app/template/sprite/sprite.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/styles/css/sprite.css" afterPath="$PROJECT_DIR$/app/template/styles/css/sprite.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/styles/css/style.css" afterPath="$PROJECT_DIR$/app/template/styles/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/styles/sass/sprite.sass" afterPath="$PROJECT_DIR$/app/template/styles/sass/sprite.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/styles/sass/style.sass" afterPath="$PROJECT_DIR$/app/template/styles/sass/style.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-    </list>
+    <list default="true" id="5ff5c1f6-b25a-4bc7-9227-370d965d9413" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -368,7 +349,7 @@
       <option name="presentableId" value="Default" />
       <updated>1508673344529</updated>
       <workItem from="1508673349044" duration="1672000" />
-      <workItem from="1508675044859" duration="13655000" />
+      <workItem from="1508675044859" duration="13715000" />
     </task>
     <task id="LOCAL-00001" summary="test WebStorm">
       <created>1508676603350</created>
@@ -377,11 +358,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508676603350</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Styling (desktop) 2/3">
+      <created>1508690718636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1508690718636</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15327000" />
+    <option name="totallyTimeSpent" value="15387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,10 +386,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5026316" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25935483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25935483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.5096774" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.49736843" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3303226" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3303226" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.5148387" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.4851613" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
