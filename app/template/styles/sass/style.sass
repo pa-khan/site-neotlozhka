@@ -73,7 +73,7 @@ img
   display: inline-block
   vertical-align: middle
 
-.input, .button, .slick-slide
+.input, .button, .slick-slide, .textarea
   outline: none
 
 /* Grid */
@@ -128,21 +128,37 @@ img
   background: transparent
   line-height: 51px
   padding: 0 25px
-  border: 1px solid #ffffff
   border-radius: 30px
   &_white
+    color: white
+    border: 1px solid #ffffff
     &::placeholder
       color: white
+  &_orange
+    border: 1px solid #f3821c
+    &::placeholder
+      color: $color-1
+
 
 .textarea
   font-size: $font-size
   font-family: $font-family-1
   display: block
-  background: white
+  background: transparent
   resize: none
   border: 1px solid #f0f0f0
-  &::placeholder
-    color: #878686
+  border-radius: 30px
+  width: 100%
+  min-height: 215px
+  padding: 30px
+  &_white
+    color: white
+    &::placeholder
+      color: white
+  &_orange
+    border: 1px solid #f3821c
+    &::placeholder
+      color: $color-1
 
 
 .button
@@ -160,9 +176,19 @@ img
   color: white
   &_red
     background-color: #d94409
+    &:hover
+      background-color: darken(#d94409, 10%)
   &_orange
     background-color: #f3821c
-
+    &:hover
+      background-color: darken(#f3821c, 10%)
+  &_white
+    background: white
+    font-size: 18px
+    font-weight: 600
+    color: #d94409
+  &:hover
+    box-shadow: none
 
 .checkbox, .radio
   text-align: left
@@ -171,6 +197,7 @@ img
     &:checked
       + label
         &:before
+          z-index: 3
           opacity: 1
   label
     font-size: 14px
@@ -178,6 +205,7 @@ img
     display: inline-block
     padding-left: 19px
     position: relative
+    cursor: pointer
     &:before
       opacity: 0
       z-index: 2
@@ -185,7 +213,6 @@ img
       left: 0
       content: ''
       position: absolute
-      @include sprite($checkbox-white)
       transition: .3s
     &:after
       z-index: 1
@@ -199,7 +226,26 @@ img
       border-radius: 50%
 
   &_white
+    label
+      &:before
+        @include sprite($checkbox-white)
 
+  &_green
+    label
+      &:before
+        @include sprite($checkbox-green)
+      &:after
+        content: ''
+        width: 8px
+        height: 8px
+        border: 2px solid #679154
+  &_orange
+    label
+      &:before
+        z-index: 2
+        @include sprite($checkbox-orange)
+      &:after
+        //background: #ff7c1e
 
 
 
@@ -367,7 +413,7 @@ img
           &:before
             content: ''
             display: block
-            background: url('../../img/bg/lines-5.png') no-repeat center
+            background: url('../../img/bg/line-5.png') no-repeat center
             width: 968px
             height: 157px
             margin-left: auto
@@ -387,7 +433,7 @@ img
           &:before
             content: ''
             display: block
-            background: url('../../img/bg/lines-3.png') no-repeat center
+            background: url('../../img/bg/line-3.png') no-repeat center
             width: 481px
             height: 157px
             margin-left: auto
@@ -621,6 +667,11 @@ img
     img
       position: relative
       z-index: 1
+  .slick-dots
+    padding-left: 40%
+    li
+      margin-left: 13px
+      margin-right: 13px
 
 .price
   padding-top: 113px
@@ -659,12 +710,578 @@ img
       font-family: $font-family-3
       font-size: 140px
       margin-top: 40px
+  &__table
+    &-one
+      td
+        padding-top: 15px
+        //padding-bottom: 40px
+    &-two
+      td
+        text-align: center
+        padding-top: 57px
+        &:nth-of-type(1)
+          padding-top: 0
+  &__currency
+    width: 150px
+    line-height: 39px
+    background-color: #679154
+    font-weight: 600
+    color: white
+    margin-top: 10px
+    margin-left: auto
+    margin-right: auto
+    &-select
+      p
+        margin-bottom: 13px
+      .jq-selectbox
+        margin-right: 45px
+        text-align: left
+        &__select
+          min-width: 210px
+  &__checkbox, &__radio
+    text-align: center
+    margin-top: 6px
+    label
+      font-size: 16px
+      &:before, &:after
+        top: 6px
+  &__button
+    width: 290px
+    line-height: 54px
+    margin-left: 20px
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2)
+
+
 
 .table
   width: 100%
   border-collapse: collapse
+  thead
+    td
+      font-size: 20px
+      line-height: 22px
+      text-align: center !important
+      background-color: #679154
+      color: white
+      &:nth-of-type(1)
+        color: $color-1
+        background: white
   thead, tbody
     td
+      padding: 12.5px 23px
       border: 1px solid #191919
+      text-align: center
+      &:nth-of-type(1)
+        text-align: left
+
+.tar
+  text-align: right !important
+
+.fw600
+  font-weight: 600
 
 
+
+
+.jq-selectbox
+  text-align: left
+  &__select
+    background: white
+    height: 30px
+    line-height: 28px
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12)
+    border-radius: 0
+    padding-right: 30px
+    min-width: 98px
+  &__trigger
+    border-left: none
+    width: 26px
+    &-arrow
+      top: 12px
+      right: 8px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 7px 4.5px 0 4.5px
+      border-color: #679154 transparent transparent transparent
+  &__dropdown
+    border-radius: 0
+    li
+      text-align: left
+      display: block
+      &:hover, &.selected
+        background-color: #679154
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.19)
+  &__select, &__dropdown
+    font-family: $font-family-1
+
+.text-xs
+  font-size: 14px
+  font-weight: 300
+
+
+.specialists
+  padding-top: 85px
+  margin-bottom: 150px
+  &__title
+    margin-bottom: 60px
+  &__list
+    margin-left: 100px
+    margin-right: 100px
+  &__item
+    text-align: center
+  &__image
+    position: relative
+    img
+      z-index: 1
+      position: relative
+      margin-left: auto
+      margin-right: auto
+      border-radius: 25px
+    &:before
+      z-index: 2
+      content: ''
+      top: 0
+      left: 0
+      position: absolute
+      background: white
+      width: 100%
+      height: 100%
+      opacity: .5
+      transition: .3s
+  .slick-arrow
+    width: 45px
+    height: 45px
+    line-height: 42px
+    text-align: center
+    font-size: 0
+    border: 2px solid #f3821c
+    border-radius: 50%
+    z-index: 1
+    transition: .3s
+    top: 40%
+    &:before
+      display: none
+    &:hover
+      opacity: .7
+  .slick-prev
+    left: -60px
+  .slick-next
+    right: -60px
+  .slick-active
+    + .slick-active
+      .specialists__image:before
+        opacity: 0
+      + .slick-active
+        .specialists__image:before
+          opacity: .5
+  &__persona
+    font-weight: 600
+    margin-top: 25px
+    margin-bottom: 5px
+  &__position
+    font-size: 14px
+    font-weight: 300
+
+.achievements
+  margin-bottom: 140px
+  &__title
+    margin-bottom: 50px
+  &__col
+    width: 179px
+    min-height: 208px
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15)
+    background-color: #ffffff
+    margin-left: 21px
+    margin-right: 21px
+    border-radius: 30px
+    padding-top: 33px
+  &__icon
+    line-height: 61px
+    margin-bottom: 30px
+  &__text
+    font-size: 14px
+    font-weight: 400
+    line-height: 18px
+
+
+.reviews
+  color: white
+  background-color: #823e03
+  padding-top: 90px
+  padding-bottom: 120px
+  &__title
+    margin-bottom: 30px
+  &__item
+    text-align: center
+  &__image
+    position: relative
+    border: 4px solid #f4b606
+    border-radius: 50%
+    width: 261px
+    height: 261px
+    border: 60px solid #9a4904
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 7px
+    > div
+      border: 8px solid #ae5304
+      border-radius: 50%
+    img
+      margin-left: auto
+      margin-right: auto
+      border: 4px solid #f4b606
+      border-radius: 50%
+      width: 124px
+      height: 124px
+
+  &__text
+    max-width: 605px
+    margin-left: auto
+    margin-right: auto
+    font-size: 14px
+    font-weight: 300
+    line-height: 20px
+    margin-bottom: 30px
+  &__persona
+    font-size: 20px
+    font-weight: 600
+    margin-bottom: 4px
+  &__date
+
+  .slick-dots
+    bottom: -70px
+    li
+      width: auto
+      height: auto
+      &.slick-active
+        button
+          border-color: #f4b606
+          background-color: #f4b606
+    button
+      width: 21px
+      height: 21px
+      background-color: #c05b04
+      border-radius: 50%
+      border: 2px solid #823e03
+      transition: .3s
+      &:before
+        display: none
+
+.review-back
+  color: white
+  padding-top: 80px
+  padding-bottom: 180px
+  background: url('../../img/bg/review-back.png') no-repeat center
+  &__title
+    margin-bottom: 80px
+  &__form
+    max-width: 600px
+    margin-left: auto
+    margin-right: auto
+  &__input
+    margin-bottom: 50px
+    &.input_phone
+      float: right
+  &__textarea
+    margin-bottom: 35px
+  &__checkbox
+    label
+      font-size: 14px
+  &__button
+    width: 250px
+    line-height: 68px
+    float: right
+    border-radius: 35px
+  &__checkbox, &__button
+    display: inline-block
+    vertical-align: top
+
+
+.faq
+  padding-top: 100px
+  padding-bottom: 85px
+  &__title
+    margin-bottom: 65px
+  &__list
+    width: 700px
+    margin-left: auto
+    margin-right: auto
+  &__item
+    margin-bottom: 10px
+    &:last-of-type
+      margin-bottom: 0
+    &_active
+      .faq
+        &__head
+          &:before
+            transform: rotate(-180deg)
+
+
+  &__head
+    position: relative
+    padding-left: 30px
+    font-size: 20px
+    cursor: pointer
+    &:before
+      content: ''
+      @include sprite($arrow-down)
+      position: absolute
+      top: 8px
+      left: 0
+      transition: .3s
+  &__body
+    font-size: 14px
+    font-weight: 300
+    padding: 20px 0 10px
+    display: none
+
+.contacts
+  padding-top: 70px
+  padding-bottom: 150px
+  background-color: #f7f7f7
+  &__title
+    margin-bottom: 50px
+  &__text
+    font-size: 14px
+    font-weight: 300
+    margin-bottom: 38px
+    p
+      margin-bottom: 10px
+      &:last-of-type
+        margin-bottom: 0
+    span
+      font-size: 20px
+      font-weight: 400
+  &__form
+    width: 500px
+  &__subtitle
+    font-size: 20px
+    margin-bottom: 35px
+  &__input
+    width: 225px
+    margin-bottom: 35px
+    &.input_phone
+      float: right
+  &__textarea
+    margin-bottom: 25px
+  &__button
+    width: 230px
+    line-height: 59px
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.23)
+    float: right
+  &__checkbox, &__button
+    display: inline-block
+    vertical-align: top
+  &__checkbox
+    label
+      &:after
+        width: 9px
+        height: 9px
+        border: 2px solid #ff7c1e
+  &__map
+    float: right
+    width: 515px
+    margin-right: 40px
+
+
+.footer
+  color: white
+  background-color: #252525
+  padding-top: 50px
+  padding-bottom: 40px
+  a
+    color: white
+  &__requisites
+    line-height: 22px
+    margin-bottom: 13px
+  &__copy
+    font-size: 14px
+    font-family: $font-family-2
+    font-weight: 300
+    color: #bdbdbd
+  &__middle
+    text-align: center
+    padding-top: 25px
+  &__socials
+    margin-bottom: 15px
+    li
+      margin-left: 5px
+      margin-right: 5px
+    a
+      display: block
+      width: 35px
+      height: 35px
+      line-height: 35px
+      background-color: #f3821c
+      text-align: center
+      border-radius: 50%
+      transition: .3s
+      &:hover
+        background-color: #2e8d02
+  &__lic
+    a
+      font-size: 14px
+      font-family: $font-family-2
+      font-weight: 300
+      color: #bdbdbd
+      &:hover
+        color: white
+        border-color: white
+  &__right
+    text-align: right
+  &__email
+    font-size: 14px
+    margin-right: 18px
+  &__callback
+    border-bottom: 2px dotted #2e8d02
+    &:hover
+      border-color: transparent
+  &__policy
+    font-size: 14px
+    font-family: $font-family-2
+    font-weight: 300
+    margin-top: 15px
+    a
+      color: #bdbdbd
+      &:hover
+        color: white
+        border-color: white
+
+.popup
+  position: relative
+  border-radius: 70px
+  display: none
+  &__close
+    position: absolute
+    width: 28px
+    height: 28px
+    background-color: #f3821c
+    border-radius: 50%
+    transition: .3s
+    cursor: pointer
+    top: 25px
+    right: 38px
+    span
+      position: absolute
+      display: block
+      width: 12px
+      height: 2px
+      background: white
+      border-radius: 5px
+      &:nth-of-type(1)
+        top: 13px
+        left: 8px
+        transform: rotate(45deg)
+      &:nth-of-type(2)
+        top: 13px
+        right: 8px
+        transform: rotate(-45deg)
+    &:hover
+      transform: rotate(90deg)
+  &__checkbox
+    label
+      &:after
+        width: 9px
+        height: 9px
+        border: 2px solid #ff7c1e
+  .fancybox-close-small
+    display: none
+  &_callback
+    width: 340px
+    padding: 75px 65px 55px !important
+    .popup
+      &__title
+        text-align: center
+        margin-bottom: 25px
+      &__input
+        display: block
+        width: 100%
+        margin-bottom: 18px
+        font-size: 14px
+      &__checkbox
+        margin-bottom: 30px
+      &__button
+        width: 100%
+        line-height: 60px
+        border-radius: 50px
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.17)
+  &_thanks
+    width: 340px
+    text-align: center
+    .popup
+      &__head
+        padding-top: 65px
+        padding-bottom: 25px
+        line-height: 16px
+      &__body
+        color: white
+        font-size: 14px
+        font-weight: 300
+        line-height: 16px
+        background-color: #f3821c
+        padding-top: 28px
+        padding-bottom: 32px
+  &_share
+    width: 970px
+    padding: 43px 70px 55px !important
+    .popup
+      &__title
+        text-align: center
+        font-size: 20px
+        margin-bottom: 25px
+      &__content
+        margin-bottom: 55px
+      &__image
+        img
+          border-radius: 75px
+      &__text
+        float: right
+        width: 480px
+        font-size: 14px
+        line-height: 20px
+        font-weight: 300
+        p
+          margin-bottom: 25px
+          &:last-of-type
+            margin-bottom: 0
+      &__form
+        text-align: center
+        font-size: 0
+        &-top
+          margin-bottom: 32px
+      &__input
+        width: 225px
+        margin-right: 45px
+        font-size: 14px
+        &:last-of-type
+          margin-right: 0
+      &__checkbox
+        margin-right: 35px
+      &__checkbox, &__button
+        display: inline-block
+        vertical-align: top
+      &__checkbox
+        position: relative
+        top: 8px
+      &__button
+        box-shadow: 0 2px 13px rgba(0, 0, 0, 0.23)
+        width: 225px
+        line-height: 53px
+  &_policy
+    width: 970px
+    padding: 43px 40px 55px !important
+    .popup
+      &__title
+        text-align: center
+        font-size: 20px
+        margin-bottom: 25px
+      &__text
+        font-weight: 300
+        max-height: 500px
+        overflow-y: scroll
+        padding-right: 15px
+        p
+          margin-bottom: 20px
+          &:last-of-type
+            margin-bottom: 0

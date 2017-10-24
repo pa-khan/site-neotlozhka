@@ -30,20 +30,20 @@
 <body>
 	<div class="panel">
 		<div class="container row">
-			<div class="panel__logo col"><a href=""><img src="upload/logo.png" alt=""></a></div>
+			<div class="panel__logo col"><a href="/"><img src="upload/logo.png" alt=""></a></div>
 			<div class="panel__nav col">
 				<ul>
-					<li><a href="">Услуги</a></li>
-					<li><a href="">Заказать звонок</a></li>
-					<li><a href="">Цены</a></li>
-					<li><a href="">Наши врачи</a></li>
-					<li><a href="">Отзывы</a></li>
-					<li><a href="">Контакты</a></li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a data-fancybox data-src="#popup-callback" href="javascript:;">Заказать звонок</a></li>
+					<li><a href="#prices">Цены</a></li>
+					<li><a href="#experts">Наши врачи</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="panel__call col">
 				<div class="panel__phone"><a href="">8 (800) 000-00-00</a></div>
-				<p><a class="panel__button button button_red">Заказать звонок</a></p>
+				<p><a class="panel__button button button_red" data-fancybox data-src="#popup-callback" href="javascript:;">Заказать звонок</a></p>
 			</div>
 		</div>
 	</div>
@@ -55,7 +55,7 @@
 						<div class="slide__title">Ухаживаем за вашими <br>родителями в Санкт-Петербурге</div>
 						<div class="slide__subtitle">Поручите это нам!</div>
 						<div class="slide__desc">До 30 ноября 2017 действует Акция!</div>
-						<a class="slide__button button button_orange">Подробнее</a>
+						<a class="slide__button button button_orange" data-fancybox data-src="#popup-share" href="javascript:;">Подробнее</a>
 						<div class="slide__text">Организуем осмотр <br>любого врача на дому</div>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 				<p class="center"><i class="icon icon-quote-before"></i><u>"ПЕТЕРБУРГСКАЯ НЕОТЛОЖКА" <span>- единственная в России и Санкт-Петербурге медицинская компания предоставляющая  комплексные услуги по медико-социальной заботе за родителями, дети которых находятся в других городах или за границей</span></u><i class="icon icon-quote-after"></i></p>
 			</div>
 		</div>
-		<div class="services">
+		<div class="services" id="services">
 			<div class="container">
 				<div class="services__title title">Наши услуги для Ваших   родителей</div>
 				<div class="services__block services__block_top">
@@ -244,21 +244,45 @@
 				</div>
 			</div>
 		</div>
-		<div class="shares">
+		<div class="shares dots">
 			<div class="shares__item">
 				<div class="shares__content">
 					<div class="container">
 						<div class="shares__wrap">
 							<div class="shares__title title title_none">Акция</div>
 							<div class="shares__text">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Aenean <br>euismod bibendum laoreet. Proin <br>gravidadolor sit amet lacus <br>accumsan et viverra justo<br> commodo.</div>
-							<a class="shares__button button button_orange">Подробнее</a>
+							<a class="shares__button button button_orange" data-fancybox data-src="#popup-shares" href="javascript:;">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="shares__image"><img src="upload/shares/1.png" alt=""></div>
+			</div>
+			<div class="shares__item">
+				<div class="shares__content">
+					<div class="container">
+						<div class="shares__wrap">
+							<div class="shares__title title title_none">Акция</div>
+							<div class="shares__text">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Aenean <br>euismod bibendum laoreet. Proin <br>gravidadolor sit amet lacus <br>accumsan et viverra justo<br> commodo.</div>
+							<a class="shares__button button button_orange" data-fancybox data-src="#popup-shares" href="javascript:;">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="shares__image"><img src="upload/shares/1.png" alt=""></div>
+			</div>
+			<div class="shares__item">
+				<div class="shares__content">
+					<div class="container">
+						<div class="shares__wrap">
+							<div class="shares__title title title_none">Акция</div>
+							<div class="shares__text">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Aenean <br>euismod bibendum laoreet. Proin <br>gravidadolor sit amet lacus <br>accumsan et viverra justo<br> commodo.</div>
+							<a class="shares__button button button_orange" data-fancybox data-src="#popup-shares" href="javascript:;">Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="shares__image"><img src="upload/shares/1.png" alt=""></div>
 			</div>
 		</div>
-		<div class="price">
+		<div class="price" id="prices">
 			<div class="container">
 				<div class="price__title title">Сколько это стоит?</div>
 				<div class="price__desc row center">
@@ -311,8 +335,8 @@
 						</tr>
 						<tr>
 							<td>Амбулаторные врачи</td>
-							<td>3</td>
-							<td>4</td>
+							<td class="fw600">3</td>
+							<td class="fw600">4</td>
 							<td></td>
 							<td>
 								<select class="select">
@@ -349,7 +373,7 @@
 							<td>Курс капельниц (10 шт)</td>
 							<td></td>
 							<td></td>
-							<td>5</td>
+							<td class="fw600">5</td>
 							<td>
 								<select class="select">
 									<option value="yes" data-price-value="500">Да</option>
@@ -395,9 +419,9 @@
 						</tr>
 						<tr>
 							<td>Активные звонки</td>
-							<td class="fwn">Ежедневно</td>
-							<td class="fwn">2 раза/нед.</td>
-							<td class="fwn">1 раз/нед.</td>
+							<td class="fw600">Ежедневно</td>
+							<td class="fw600">2 раза/нед.</td>
+							<td class="fw600">1 раз/нед.</td>
 							<td>
 								<select class="select">
 									<option value="1" data-price-value="3000">Ежедневно</option>
@@ -409,38 +433,38 @@
 						</tr>
 						<tr>
 							<td>Несгораемая сумма</td>
-							<td class="fwn">20 000 руб</td>
-							<td class="fwn">20 000 руб</td>
-							<td class="fwn">20 000 руб</td>
-							<td class="fwn">20 000 руб</td>
+							<td class="fw600">20 000 руб</td>
+							<td class="fw600">20 000 руб</td>
+							<td class="fw600">20 000 руб</td>
+							<td class="fw600">20 000 руб</td>
 						</tr>
 						<tr>
 							<td class="tar">Итого стоимость</td>
-							<td class="fwn">56 000 руб</td>
-							<td class="fwn">56 000 руб</td>
-							<td class="fwn">56 000 руб</td>
-							<td class="fwn">56 000 руб</td>
+							<td class="fw600">56 000 руб</td>
+							<td class="fw600">56 000 руб</td>
+							<td class="fw600">56 000 руб</td>
+							<td class="fw600">56 000 руб</td>
 						</tr>
 						<tr>
 							<td class="tar">Скидка</td>
-							<td class="fwn">15 %</td>
-							<td class="fwn">20 %</td>
-							<td class="fwn">30 %</td>
-							<td class="fwn">20 %</td>
+							<td class="fw600">15 %</td>
+							<td class="fw600">20 %</td>
+							<td class="fw600">30 %</td>
+							<td class="fw600">20 %</td>
 						</tr>
 						<tr>
 							<td class="tar">Итого стоимость со скидкой</td>
-							<td class="fwn">56 000 руб</td>
-							<td class="fwn">86 000 руб</td>
-							<td class="fwn">56 000 руб</td>
-							<td class="fwn">46 000 руб</td>
+							<td class="fw600">56 000 руб</td>
+							<td class="fw600">86 000 руб</td>
+							<td class="fw600">56 000 руб</td>
+							<td class="fw600">46 000 руб</td>
 						</tr>
 					</tbody>
 					<tfoot>
-						<tr>
+						<tr class="price__table-one">
 							<td colspan="5" class="text-xs">* Программы расчитаны на 1 год</td>
 						</tr>
-						<tr>
+						<tr class="price__table-two">
 							<td>
 								<div class="price__currency-select">
 									<p>Выберите валюту нашей страны</p>
@@ -454,49 +478,49 @@
 							</td>
 							<td>
 								<div class="price__currency" data-currency-ruble="" data-currency-dollar="" data-currency-euro="" data-currency-pound="">$ 990.00</div>
-								<div class="radio radio_green"><input type="radio"><label>Выбрать</label></div>
+								<div class="price__radio radio radio_green"><input type="radio" name="type" value="1"><label>Выбрать</label></div>
 							</td>
 							<td>
 								<div class="price__currency" data-currency-ruble="" data-currency-dollar="" data-currency-euro="" data-currency-pound="">$ 990.00</div>
-								<div class="radio radio_green"><input type="radio"><label>Выбрать</label></div>
+								<div class="price__radio radio radio_green"><input type="radio" name="type" value="2"><label>Выбрать</label></div>
 							</td>
 							<td>
 								<div class="price__currency" data-currency-ruble="" data-currency-dollar="" data-currency-euro="" data-currency-pound="">$ 990.00</div>
-								<div class="radio radio_green"><input type="radio"><label>Выбрать</label></div>
+								<div class="price__radio radio radio_green"><input type="radio" name="type" value="3"><label>Выбрать</label></div>
 							</td>
 							<td>
 								<div class="price__currency" data-currency-ruble="" data-currency-dollar="" data-currency-euro="" data-currency-pound="">$ 990.00</div>
-								<div class="radio radio_green"><input type="radio"><label>Выбрать</label></div>
+								<div class="price__radio radio radio_green"><input type="radio" name="type" value="4"><label>Выбрать</label></div>
 							</td>
 						</tr>
-						<tr>
+						<tr class="price__table-three">
 							<td colspan="5"><a href="" class="price__button button button_red">Перейти на страницу оплаты</a></td>
 						</tr>
 					</tfoot>
 				</table>
 			</div>
 		</div>
-		<div class="specialists">
+		<div class="specialists" id="experts">
 			<div class="container">
 				<div class="specialists__title title">Наши специалисты</div>
 				<div class="specialists__list">
 					<div class="specialists__item">
-						<div class="specialists__image"><img src="" alt=""></div>
+						<div class="specialists__image"><img src="upload/faces/1.png" alt=""></div>
 						<div class="specialists__persona">Юлия Регина</div>
 						<div class="specialists__position">Терапевт</div>
 					</div>
 					<div class="specialists__item">
-						<div class="specialists__image"><img src="" alt=""></div>
+						<div class="specialists__image"><img src="upload/faces/1.png" alt=""></div>
 						<div class="specialists__persona">Юлия Регина</div>
 						<div class="specialists__position">Терапевт</div>
 					</div>
 					<div class="specialists__item">
-						<div class="specialists__image"><img src="" alt=""></div>
+						<div class="specialists__image"><img src="upload/faces/1.png" alt=""></div>
 						<div class="specialists__persona">Юлия Регина</div>
 						<div class="specialists__position">Терапевт</div>
 					</div>
 					<div class="specialists__item">
-						<div class="specialists__image"><img src="" alt=""></div>
+						<div class="specialists__image"><img src="upload/faces/1.png" alt=""></div>
 						<div class="specialists__persona">Юлия Регина</div>
 						<div class="specialists__position">Терапевт</div>
 					</div>
@@ -507,45 +531,45 @@
 			<div class="achievements__title title">Наши достижения</div>
 			<div class="achievements__list row_line">
 				<div class="achievements__col col_line">
-					<div class="achievements__icon"><i class="icon icon-"></i></div>
+					<div class="achievements__icon"><i class="icon icon-fifteen"></i></div>
 					<div class="achievements__text">Более 15 лет<br> на рынке <br>медицинских услуг<br></div>
 				</div>
 				<div class="achievements__col col_line">
-					<div class="achievements__icon"><i class="icon icon-"></i></div>
+					<div class="achievements__icon"><i class="icon icon-stethoscope"></i></div>
 					<div class="achievements__text">Обслужено 120 000<br> пациентов</div>
 				</div>
 				<div class="achievements__col col_line">
-					<div class="achievements__icon"><i class="icon icon-"></i></div>
+					<div class="achievements__icon"><i class="icon icon-man"></i></div>
 					<div class="achievements__text">Помогаем ежедневно<br> 75 пожилым<br>пациентам</div>
 				</div>
 				<div class="achievements__col col_line">
-					<div class="achievements__icon"><i class="icon icon-"></i></div>
+					<div class="achievements__icon"><i class="icon icon-girl"></i></div>
 					<div class="achievements__text">Помогаем более<br> 35 семьям<br>из-за границы</div>
 				</div>
 				<div class="achievements__col col_line">
-					<div class="achievements__icon"><i class="icon icon-"></i></div>
+					<div class="achievements__icon"><i class="icon icon-planet"></i></div>
 					<div class="achievements__text">Заявки поступают<br> из <br>7 стран</div>
 				</div>
 			</div>
 		</div>
-		<div class="reviews">
+		<div class="reviews" id="reviews">
 			<div class="container">
 				<div class="reviews__title title">Отзывы наших пациентов</div>
 				<div class="reviews__list">
 					<div class="reviews__item">
-						<div class="reviews__image"><div><img src="" alt=""></div></div>
+						<div class="reviews__image"><div><img src="upload/reviews/1.png" alt=""></div></div>
 						<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet<br>Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar<br> tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <br>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien .</div>
 						<div class="reviews__persona">Вероника Булина</div>
 						<div class="reviews__date">22.12.2016</div>
 					</div>
 					<div class="reviews__item">
-						<div class="reviews__image"><div><img src="" alt=""></div></div>
+						<div class="reviews__image"><div><img src="upload/reviews/1.png" alt=""></div></div>
 						<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet<br>Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar<br> tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <br>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien .</div>
 						<div class="reviews__persona">Вероника Булина</div>
 						<div class="reviews__date">22.12.2016</div>
 					</div>
 					<div class="reviews__item">
-						<div class="reviews__image"><div><img src="" alt=""></div></div>
+						<div class="reviews__image"><div><img src="upload/reviews/1.png" alt=""></div></div>
 						<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet<br>Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar<br> tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <br>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien .</div>
 						<div class="reviews__persona">Вероника Булина</div>
 						<div class="reviews__date">22.12.2016</div>
@@ -572,47 +596,52 @@
 			</div>
 		</div>
 		<div class="faq">
-			<div class="continer">
-				<div class="faq__title"></div>
+			<div class="container">
+				<div class="faq__title title">Частые вопросы наших заказчиков</div>
 				<div class="faq__list">
 					<div class="faq__item">
-						<div class="faq__head"></div>
-						<div class="faq__body"></div>
+						<div class="faq__head">Почему стоит обращаться к нам?</div>
+						<div class="faq__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam  fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
 					</div>
 					<div class="faq__item">
-						<div class="faq__head"></div>
-						<div class="faq__body"></div>
+						<div class="faq__head">Почему стоит обращаться к нам?</div>
+						<div class="faq__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam  fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
 					</div>
 					<div class="faq__item">
-						<div class="faq__head"></div>
-						<div class="faq__body"></div>
+						<div class="faq__head">Почему стоит обращаться к нам?</div>
+						<div class="faq__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam  fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
 					</div>
 					<div class="faq__item">
-						<div class="faq__head"></div>
-						<div class="faq__body"></div>
+						<div class="faq__head">Почему стоит обращаться к нам?</div>
+						<div class="faq__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam  fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="contacts">
+		<div class="contacts" id="contacts">
 			<div class="container">
-				<div class="contacts__title title"></div>
-				<div class="contacts__text"></div>
+				<div class="contacts__title title">Наши контакты</div>
+				<div class="contacts__text">
+					<p><span>Телефоны:</span> <a href="tel:8 (812) 627-13-05">8 (812) 627-13-05</a>,  <a href="tel:8 (812) 245-30-64">8 (812) 245-30-64</a>  </p>
+					<p><span>E-Mail:</span> <a href="mailto:er@doctor911.ru">er@doctor911.ru</a></p>
+					<p><span>Адрес:</span> 191123, Россия, Санкт-Петербург, ул.Радищева, д.39, лит.Н, пом. 1-Н</p>
+				</div>
 				<div class="contacts__row row">
-					<div class="contacts__form">
+					<div class="contacts__form col">
+						<div class="contacts__subtitle">Связаться с нами:</div>
 						<div class="contacts__top">
-							<input type="text" class="contacts__input input input_orange">
-							<input type="text" class="contacts__input input input_orange">
+							<input type="text" class="contacts__input input input_orange" placeholder="Имя">
+							<input type="text" class="contacts__input input input_orange input_phone" placeholder="Телефон">
 						</div>
 						<div class="contacts__middle">
-							<div class="contacts__textarea textarea textarea_orange"></div>
+							<textarea class="contacts__textarea textarea textarea_orange" placeholder="Напишите нам"></textarea>
 						</div>
 						<div class="contacts__bottom">
-							<div class="review-back__checkbox checkbox checkbox_orange"><input type="checkbox"><label for=""></label></div>
-							<div class="review-back__button button button_orange"></div>
+							<div class="contacts__checkbox checkbox checkbox_orange"><input type="checkbox"><label for="">Я согласен на обработку<br> персональных данных</label></div>
+							<button class="contacts__button button button_orange">Отправить</button>
 						</div>
 					</div>
-					<div class="contacts__map"></div>
+					<div class="contacts__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f3346e4d213a9ea2f5c50cde15a90a7916638aee7e01ac913255952e55d1994&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script></div>
 				</div>
 			</div>
 		</div>
@@ -621,31 +650,71 @@
 		<div class="container row">
 			<div class="footer__left col col-3">
 				<div class="footer__requisites">
-					<p></p>
-					<p></p>
-					<p></p>
+					<p>ООО «ЕР сервис»  </p>
+					<p>ул. Радищева д. 39 лит Н</p>
+					<p>Санкт-Петербург 191123</p>
 				</div>
-				<div class="footer__copy"></div>
+				<div class="footer__copy">© 2016  Все права защищены</div>
 			</div>
 			<div class="footer__middle col col-3">
 				<div class="footer__socials">
 					<ul>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-vk"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-facebook"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-twitter"></i></a></li>
 					</ul>
-					<div class="footer__lic"><a href=""></a></div>
 				</div>
+				<div class="footer__lic"><a href="">Лицензии</a></div>
 			</div>
 			<div class="footer__right col col-3">
 				<div class="footer__contacts">
-				<p><a href="" class="footer__email"></a></p>
-				<p><a href="" class="footer__phone"></a></p>
-				<p><a href="" class="footer__callback"></a></p>
+				<p><a href="" class="footer__email">er@doctor911.ru</a></p>
+				<p><a href="" class="footer__phone">8 (812) 627-13-05</a></p>
+				<p><a href="" class="footer__callback">Заказать звонок</a></p>
 				</div>
-				<div class="footer__policy"><a href=""></a></div>
+				<div class="footer__policy"><a href="" data-fancybox data-src="#popup-policy" href="javascript:;">Политика конфиденциальности</a></div>
 			</div>
 		</div>
 	</footer>
+	<div class="popup popup_callback" id="popup-callback">
+		<div class="popup__close" data-fancybox-close><span></span><span></span></div>
+		<div class="popup__title">Заказ обратного звонка</div>
+		<input type="text" class="popup__input input input_orange" placeholder="Имя">
+		<input type="text" class="popup__input input input_orange input_phone" placeholder="Телефон">
+		<div class="popup__checkbox checkbox checkbox_orange"><input type="checkbox"><label for="">Я согласен на обработку<br> персональных данных</label></div>
+		<button class="popup__button button button_orange">Перезвоните мне</button>
+	</div>
+	<div class="popup popup_thanks" id="popup-thanks">
+		<div class="popup__close" data-fancybox-close><span></span><span></span></div>
+		<div class="popup__head">СПАСИБО<br> за ваше обращение!</div>
+		<div class="popup__body">В ближайшее время с вами<br> свяжется наш специалист</div>
+	</div>
+	<div class="popup popup_share" id="popup-share">
+		<div class="popup__close" data-fancybox-close><span></span><span></span></div>
+		<div class="popup__title">Акция</div>
+		<div class="popup__content row">
+			<div class="popup__image col"><img src="upload/shares/popup/1.png" alt=""></div>
+			<div class="popup__text col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra  justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam  fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.  </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  bibendum  laoreet. Proin gravida dolor sit amet lacus accumsan et  viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis  natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+			</div>
+		</div>
+		<div class="popup__form">
+			<div class="popup__form-top">
+				<input type="text" class="popup__input input input_orange" placeholder="Имя">
+				<input type="text" class="popup__input input input_orange input_phone" placeholder="Телефон">
+				<input type="text" class="popup__input input input_orange" placeholder="E-mail (необязательно)">
+			</div>
+			<div class="popup__form-bottom">
+				<div class="popup__checkbox checkbox checkbox_orange"><input type="checkbox"><label for="">Я согласен на обработку<br> персональных данных</label></div>
+				<button class="popup__button button button_orange">Отправить</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup_policy" id="popup-policy">
+		<div class="popup__close" data-fancybox-close><span></span><span></span></div>
+		<div class="popup__title">Политика конфиденциальности</div>
+		<div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus autem, consequatur cumque, cupiditate doloribus earum eveniet ipsa ipsum iste itaque iure nesciunt nisi obcaecati optio, praesentium provident quae qui reprehenderit sequi suscipit vel voluptate. A ab alias beatae, corporis debitis deserunt dolorum ducimus error fuga ipsum libero, nisi omnis placeat quasi qui quos ratione sint ut vel voluptate? Accusamus aliquid blanditiis enim error et eveniet, molestiae nam, officia possimus praesentium quis quod quos reiciendis sit totam ullam veritatis! Accusamus, corporis dignissimos doloremque eius fugit inventore praesentium quia. Ab cumque earum eius fugiat id inventore laboriosam magni mollitia nisi nostrum pariatur possimus quaerat quam, quas saepe veritatis vitae voluptatem voluptatibus. Corporis dicta nulla omnis optio, placeat quos repellat unde. Architecto assumenda esse eum id labore laudantium libero nam, nesciunt nobis omnis perferendis placeat quia quidem sequi sint sunt veniam. Aliquam animi aut, enim in ipsam laborum mollitia quas quisquam temporibus voluptas. Adipisci amet aperiam eaque nostrum omnis quas quod! Aspernatur, delectus earum est ex excepturi exercitationem inventore modi nihil quidem quis sint tenetur ullam ut. Accusamus adipisci aliquid animi asperiores consectetur consequatur corporis debitis dicta dignissimos dolore doloremque dolores doloribus dolorum ducimus eaque earum est expedita ipsum iste laborum, minima modi necessitatibus neque numquam odit optio perspiciatis quaerat quasi quibusdam repudiandae rerum sint, sit tempore totam vitae voluptates voluptatum. Accusamus accusantium aperiam architecto, at blanditiis cumque cupiditate distinctio eaque eligendi eos explicabo impedit ipsa ipsam itaque maxime nemo, nobis officia quam reiciendis repudiandae, rerum saepe sed sint veniam voluptatem voluptates voluptatum? Accusantium aliquam aut cum cumque est fugiat harum illum ipsam labore, neque nihil nisi odit perferendis provident quod repudiandae saepe sit tempora totam veritatis? Aperiam consequatur dolorum earum eum exercitationem iste, itaque mollitia nostrum, pariatur, qui ratione reprehenderit tenetur ut. Dolore fuga itaque molestias mollitia quibusdam, quod sed. Accusamus aliquam commodi cum deserunt dolores dolorum ducimus est hic illum inventore ipsam labore minima modi mollitia nesciunt nulla, placeat praesentium quae quos ratione repellendus sint sunt tempora tempore unde ut, velit? A aliquam aliquid aspernatur beatae consequatur corporis culpa deleniti deserunt dolor dolores doloribus ducimus earum, et fugiat harum inventore ipsum iste iure maxime minus necessitatibus non, nostrum nulla, quam quia repellat reprehenderit repudiandae sit unde voluptatem? Accusantium aliquid aperiam asperiores at blanditiis corporis cupiditate delectus deserunt dicta dignissimos dolore ducimus, eaque, error esse eveniet ex explicabo fugiat harum hic laudantium magnam magni mollitia nam necessitatibus nemo nulla odit possimus quaerat recusandae rem repudiandae sapiente similique soluta suscipit ut veritatis, voluptatem? A aliquid asperiores at autem deleniti deserunt, dignissimos dolor dolorem doloremque ducimus ea earum est ex fuga, in itaque libero maiores maxime nam nesciunt nisi, perferendis provident quaerat repellendus reprehenderit saepe sequi soluta vel voluptatem voluptatum? Blanditiis cumque, distinctio enim exercitationem laudantium libero ratione recusandae sequi totam voluptates. Dicta expedita facilis, harum inventore saepe vel veniam voluptatem! Accusamus, alias amet architecto cum iusto nihil officia possimus recusandae. Adipisci eligendi unde veniam voluptas! Adipisci alias animi blanditiis ducimus eos esse et harum impedit iusto laboriosam maiores maxime nesciunt nostrum odit officiis, quia quo ratione, tempore tenetur ullam. Asperiores deleniti dolorem doloribus facere fugit ipsum iure maxime mollitia nam officia quasi quod ratione, repellat, repellendus sit temporibus voluptas? Corporis debitis delectus facilis necessitatibus pariatur rem sequi? Beatae blanditiis consequuntur distinctio dolorum magni minima rem! A aliquam, aliquid, at aut consequatur culpa doloremque ducimus eos ex impedit laboriosam minima nemo nihil numquam perspiciatis possimus, quas quisquam! Accusamus alias aperiam asperiores assumenda cum cupiditate, dolore dolorem doloribus, enim eos, error exercitationem expedita fugiat ipsa ipsam iure labore libero maxime molestiae neque nostrum numquam odio odit omnis quas quos ratione recusandae sit tempora tempore totam ut velit veniam vero voluptate voluptatem voluptatibus. Asperiores consectetur, culpa, cum cumque debitis dolorem eum excepturi facilis impedit ipsam iure laboriosam laborum molestiae nemo nesciunt numquam odit perferendis qui soluta voluptatibus. Asperiores deserunt, dolores expedita odit qui sed soluta! Accusamus aspernatur assumenda atque commodi deserunt dicta dolore ea enim fugiat illum ipsum itaque iusto labore laborum, molestias neque nesciunt non odit optio pariatur porro quam quasi qui quidem ratione recusandae sapiente sed sit tempora vitae voluptate voluptates voluptatibus voluptatum! Doloremque ea eaque harum ipsum magnam molestiae nesciunt obcaecati omnis possimus praesentium provident quidem soluta, suscipit! Beatae consequuntur cupiditate enim facere fugiat illum ipsum laudantium molestiae nesciunt officiis optio placeat quas repellat, temporibus vero? Accusantium, aliquid autem cum deleniti dolore, ducimus ea et maiores odio pariatur perspiciatis quam quo recusandae rerum voluptatem! Aspernatur at deleniti doloribus esse facere ipsa iste iusto, natus nulla ratione rerum suscipit tempore vero! Aperiam asperiores commodi culpa cumque cupiditate doloremque dolores doloribus dolorum eos facere fugit harum illum incidunt ipsum itaque molestiae molestias necessitatibus nemo officiis possimus qui quis quisquam quos ratione recusandae reiciendis repellendus reprehenderit sed sint sit tenetur vel velit, voluptas. A animi aspernatur autem blanditiis consectetur dolor dolore doloribus dolorum eligendi est facere ipsa iusto laudantium maiores, nam nesciunt nobis non quae quo quos saepe sequi sit veniam. Alias atque cum deleniti dolorum, esse hic in ipsam minus nulla, numquam odio quas quod rerum tempora veritatis? Amet, aspernatur itaque labore maxime pariatur placeat qui ratione sunt totam veritatis. Accusamus atque, dolore enim necessitatibus nulla pariatur provident ullam. Ad aspernatur cumque deleniti doloribus esse expedita illum libero molestias mollitia natus nihil nisi officiis placeat quia ratione rerum saepe, sunt temporibus. Consectetur dolore, doloribus dolorum laudantium neque non, obcaecati odio provident quas quis recusandae repellat sit soluta tempore vel! Ab ducimus eaque earum eligendi iste laboriosam nam nemo officia. A accusamus ad aliquid asperiores assumenda autem consectetur deleniti distinctio earum eveniet explicabo facere harum illum ipsa itaque iure laborum laudantium magnam modi odio, omnis quae quaerat quia quis sed ullam unde vitae! A aperiam at eligendi est, excepturi id in ipsa laudantium minus modi, natus neque, non omnis perspiciatis possimus repudiandae vel. A amet aperiam consequatur dicta dignissimos et fugit in incidunt laudantium maxime minima nisi, obcaecati, quas quasi quibusdam quidem ratione reiciendis tempora vitae voluptatum. Animi id molestias perferendis placeat porro quae quod similique. Aperiam dolorem hic inventore ipsum nesciunt ratione recusandae reprehenderit.</div>
+	</div>
 </body>
 </html>

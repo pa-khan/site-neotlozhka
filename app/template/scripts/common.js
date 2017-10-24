@@ -5,6 +5,22 @@ $(document).ready(function($) {
 		arrows: false
 	});
 
+	$('.specialists__list').slick({
+		slidesToShow: 3,
+		prevArrow: '<button type="button" class="slick-prev slick-arrow"><i class="icon icon-arrow-left"></i></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow"><i class="icon icon-arrow-right"></i></button>'
+	});
+
+	$('.shares').slick({
+		arrows: false,
+		dots: true
+	});
+
+	$('.reviews__list').slick({
+		dots: true,
+		arrows: false
+	});
+
 	function valueElementForm(nameElement) {
 		var newNameElement = '.' + nameElement;
 		element = $(newNameElement);
@@ -20,4 +36,29 @@ $(document).ready(function($) {
 	valueElementForm('radio');
 	valueElementForm('checkbox');
 
+
+	setTimeout(function() {
+		$('select').styler();
+	}, 100)
+	
+	$('.faq__head').click(function () {
+		var body = $(this).siblings('.faq__body'),
+				parent = $(this).parents('.faq__item');
+		body.slideToggle(300);
+		parent.toggleClass('faq__item_active')
+	});
+
+	$(".panel__nav a").click(function (event) {
+		event.preventDefault();
+
+		var id  = $(this).attr('href');
+
+		if(id.charAt(0) == '#'){
+			var top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 1500);
+		}
+
+	});
+
+	$('.input_phone').mask('+7 (999) 999-99-99');
 });
