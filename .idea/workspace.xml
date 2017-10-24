@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ff5c1f6-b25a-4bc7-9227-370d965d9413" name="Default" comment="Styling (desktop) 2/3">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/upload/faces/1.png" afterPath="$PROJECT_DIR$/app/upload/faces/1.png" />
+    <list default="true" id="5ff5c1f6-b25a-4bc7-9227-370d965d9413" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/scripts/common.js" afterPath="$PROJECT_DIR$/app/template/scripts/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/styles/css/style.css" afterPath="$PROJECT_DIR$/app/template/styles/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/styles/sass/style.sass" afterPath="$PROJECT_DIR$/app/template/styles/sass/style.sass" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +26,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="245" column="10" lean-forward="true" selection-start-line="245" selection-start-column="10" selection-end-line="245" selection-end-column="10" />
+                <state relative-caret-position="113">
+                  <caret line="663" column="85" lean-forward="true" selection-start-line="663" selection-start-column="85" selection-end-line="663" selection-end-column="85" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -52,8 +49,18 @@
                     <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <marker date="1508828755788" expanded="true" signature="471:746" ph="..." />
+                    <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="18">
+                  <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -132,11 +139,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/template/scripts/common.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/template/styles/sass/style.sass" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -399,7 +406,7 @@
       <workItem from="1508673349044" duration="1672000" />
       <workItem from="1508675044859" duration="13778000" />
       <workItem from="1508751619519" duration="15064000" />
-      <workItem from="1508818164155" duration="8030000" />
+      <workItem from="1508818164155" duration="8254000" />
     </task>
     <task id="LOCAL-00001" summary="test WebStorm">
       <created>1508676603350</created>
@@ -415,11 +422,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508690718636</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="index page 100% - desktop">
+      <created>1508829241224</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508829241224</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38544000" />
+    <option name="totallyTimeSpent" value="38768000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,14 +449,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.52307695" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.47692308" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20657894" sideWeight="0.47692308" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5026316" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25935483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.49736843" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.5096774" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14342105" sideWeight="0.51153845" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -500,7 +514,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test WebStorm" />
     <MESSAGE value="Styling (desktop) 2/3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling (desktop) 2/3" />
+    <MESSAGE value="index page 100% - desktop" />
+    <option name="LAST_COMMIT_MESSAGE" value="index page 100% - desktop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -532,7 +547,7 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1508828755788" expanded="true" signature="471:746" ph="..." />
+            <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
           </folding>
         </state>
       </provider>
@@ -586,7 +601,7 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1508828755788" expanded="true" signature="471:746" ph="..." />
+            <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
           </folding>
         </state>
       </provider>
@@ -648,7 +663,7 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1508828755788" expanded="true" signature="471:746" ph="..." />
+            <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
           </folding>
         </state>
       </provider>
@@ -663,13 +678,6 @@
     <entry file="file://$PROJECT_DIR$/app/template/sprite/sprite.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/template/libs/slick-carousel/slick/slick.css">
@@ -757,10 +765,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="245" column="10" lean-forward="true" selection-start-line="245" selection-start-column="10" selection-end-line="245" selection-end-column="10" />
+        <state relative-caret-position="113">
+          <caret line="663" column="85" lean-forward="true" selection-start-line="663" selection-start-column="85" selection-end-line="663" selection-end-column="85" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -782,7 +798,7 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1508828755788" expanded="true" signature="471:746" ph="..." />
+            <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
           </folding>
         </state>
       </provider>
