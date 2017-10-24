@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ff5c1f6-b25a-4bc7-9227-370d965d9413" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
     </list>
@@ -26,8 +25,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="113">
-                  <caret line="663" column="85" lean-forward="true" selection-start-line="663" selection-start-column="85" selection-end-line="663" selection-end-column="85" />
+                <state relative-caret-position="542">
+                  <caret line="79" column="129" lean-forward="false" selection-start-line="79" selection-start-column="129" selection-end-line="79" selection-end-column="129" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -49,7 +48,7 @@
                     <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
+                    <marker date="1508829673207" expanded="true" signature="471:746" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -406,7 +405,7 @@
       <workItem from="1508673349044" duration="1672000" />
       <workItem from="1508675044859" duration="13778000" />
       <workItem from="1508751619519" duration="15064000" />
-      <workItem from="1508818164155" duration="8254000" />
+      <workItem from="1508818164155" duration="8490000" />
     </task>
     <task id="LOCAL-00001" summary="test WebStorm">
       <created>1508676603350</created>
@@ -429,11 +428,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508829241224</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed index page (callback link footer)">
+      <created>1508829462147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508829462147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38768000" />
+    <option name="totallyTimeSpent" value="39004000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,14 +455,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.52307695" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20657894" sideWeight="0.47692308" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.47692308" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5026316" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25935483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.49736843" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20657894" sideWeight="0.5096774" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14342105" sideWeight="0.51153845" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -515,7 +521,8 @@
     <MESSAGE value="test WebStorm" />
     <MESSAGE value="Styling (desktop) 2/3" />
     <MESSAGE value="index page 100% - desktop" />
-    <option name="LAST_COMMIT_MESSAGE" value="index page 100% - desktop" />
+    <MESSAGE value="Fixed index page (callback link footer)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed index page (callback link footer)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -547,7 +554,7 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
+            <marker date="1508829673207" expanded="true" signature="471:746" ph="..." />
           </folding>
         </state>
       </provider>
@@ -601,7 +608,7 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
+            <marker date="1508829673207" expanded="true" signature="471:746" ph="..." />
           </folding>
         </state>
       </provider>
@@ -663,7 +670,7 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
+            <marker date="1508829673207" expanded="true" signature="471:746" ph="..." />
           </folding>
         </state>
       </provider>
@@ -775,8 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="663" column="85" lean-forward="true" selection-start-line="663" selection-start-column="85" selection-end-line="663" selection-end-column="85" />
+        <state relative-caret-position="542">
+          <caret line="79" column="129" lean-forward="false" selection-start-line="79" selection-start-column="129" selection-end-line="79" selection-end-column="129" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -798,7 +805,7 @@
             <element signature="n#div#2;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#11;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1508829434306" expanded="true" signature="471:746" ph="..." />
+            <marker date="1508829673207" expanded="true" signature="471:746" ph="..." />
           </folding>
         </state>
       </provider>
