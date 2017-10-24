@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+
+	<!-- Scripts -->
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+
+	<!--[if lt IE 9]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('main');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="panel panel_shadow">
+		<div class="container row">
+			<div class="panel__logo col"><a href="/"><img src="upload/logo.png" alt=""></a></div>
+			<div class="panel__nav col">
+				<ul>
+					<li><a href="index.html#services">Услуги</a></li>
+					<li><a data-fancybox data-src="#popup-callback" href="javascript:;">Заказать звонок</a></li>
+					<li><a href="index.html#prices">Цены</a></li>
+					<li><a href="index.html#experts">Наши врачи</a></li>
+					<li><a href="index.html#reviews">Отзывы</a></li>
+					<li><a href="index.html#contacts">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="panel__call col">
+				<div class="panel__phone"><a href="">8 (800) 000-00-00</a></div>
+				<p><a class="panel__button button button_red" data-fancybox data-src="#popup-callback" href="javascript:;">Заказать звонок</a></p>
+			</div>
+		</div>
+	</div>
+	<main class="main">
+		<div class="order">
+			<div class="order-list">
+				<div class="container">
+					<div class="order-list__title title">Перечень услуг к оплате</div>
+					<table class="order-list__list table">
+						<thead>
+						<tr>
+							<td>№</td>
+							<td>Описание</td>
+							<td>Кол-во</td>
+							<td>Валюта</td>
+							<td>Цена</td>
+							<td>Сумма</td>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>1.</td>
+							<td>Программа ЗАБОТА</td>
+							<td>1</td>
+							<td>Рубль</td>
+							<td>56000.00</td>
+							<td>56000.00</td>
+						</tr>
+						<tr>
+							<td>2.</td>
+							<td>Первичное обследование врача</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3.</td>
+							<td>Скорая помощь</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>4.</td>
+							<td>Амбулаторные врачи</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						</tbody>
+					</table>
+					<table class="order-list__sum table">
+							<tbody>
+							<tr>
+								<td class="tar">ИТОГО:</td>
+								<td>Руб</td>
+								<td>56000.00</td>
+							</tr>
+							<tr>
+								<td class="tar">Скидка:</td>
+								<td>Руб</td>
+								<td>10000.00</td>
+							</tr>
+							<tr>
+								<td class="tar">Сумма к оплате:</td>
+								<td>Руб</td>
+								<td>46000.00</td>
+							</tr>
+							</tbody>
+						</table>
+					<div class="order-list__buttons clearfix">
+						<a href="index.html#prices-table" class="order-list__button button button_orange">Вернуться к выбору услуг</a>
+						<a href="#order-data" class="order-list__button order-list__button-link button button_red">Подтвердить выбор</a>
+					</div>
+				</div>
+			</div>
+			<div class="order-data" id="order-data">
+				<div class="container">
+					<div class="order-data__title title">Оформление платежа</div>
+					<div class="order-data__list row_line">
+						<div class="order-data__col col_line">
+							<div class="order-data__subtitle">Личные данные плательщика</div>
+							<input type="text" class="order-data__input input input_orange" placeholder="Фамилия">
+							<input type="text" class="order-data__input input input_orange" placeholder="Имя">
+							<input type="text" class="order-data__input input input_orange" placeholder="Отчество">
+							<input type="text" class="order-data__input input input_orange" placeholder="E-mail">
+							<input type="text" class="order-data__input input input_orange input_phone" placeholder="Телефон">
+							<input type="text" class="order-data__input input input_orange" placeholder="Адрес">
+							<input type="text" class="order-data__input input input_orange" placeholder="Город">
+							<input type="text" class="order-data__input input input_orange" placeholder="Страна">
+							<div class="order-data__checkbox checkbox checkbox_orange"><input type="checkbox"><label>Я согласен на обработку персональных данных</label></div>
+						</div>
+						<div class="order-data__col col_line">
+							<div class="order-data__subtitle">Личные данные пациента</div>
+							<input type="text" class="order-data__input input input_orange" placeholder="Фамилия">
+							<input type="text" class="order-data__input input input_orange" placeholder="Имя">
+							<input type="text" class="order-data__input input input_orange" placeholder="Отчество">
+							<input type="text" class="order-data__input input input_orange" placeholder="E-mail">
+							<input type="text" class="order-data__input input input_orange input_phone" placeholder="Телефон">
+							<input type="text" class="order-data__input input input_orange" placeholder="Адрес">
+							<textarea class="order-data__textarea textarea textarea_orange" placeholder="Комментарии и пожелания"></textarea>
+							<button class="order-data__button button button_red">Перейти к оплате</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container row">
+			<div class="footer__left col col-3">
+				<div class="footer__requisites">
+					<p>ООО «ЕР сервис»  </p>
+					<p>ул. Радищева д. 39 лит Н</p>
+					<p>Санкт-Петербург 191123</p>
+				</div>
+				<div class="footer__copy">© 2016  Все права защищены</div>
+			</div>
+			<div class="footer__middle col col-3">
+				<div class="footer__socials">
+					<ul>
+						<li><a href="" target="_blank"><i class="icon icon-vk"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-facebook"></i></a></li>
+						<li><a href="" target="_blank"><i class="icon icon-twitter"></i></a></li>
+					</ul>
+				</div>
+				<div class="footer__lic"><a href="">Лицензии</a></div>
+			</div>
+			<div class="footer__right col col-3">
+				<div class="footer__contacts">
+				<p><a href="" class="footer__email">er@doctor911.ru</a></p>
+				<p><a href="" class="footer__phone">8 (812) 627-13-05</a></p>
+				<p><a class="footer__callback" data-fancybox data-src="#popup-callback" href="javascript:;">Заказать звонок</a></p>
+				</div>
+				<div class="footer__policy"><a href="" data-fancybox data-src="#popup-policy" href="javascript:;">Политика конфиденциальности</a></div>
+			</div>
+		</div>
+	</footer>
+	<div class="popup popup_callback" id="popup-callback">
+		<div class="popup__close" data-fancybox-close><span></span><span></span></div>
+		<div class="popup__title">Заказ обратного звонка</div>
+		<input type="text" class="popup__input input input_orange" placeholder="Имя">
+		<input type="text" class="popup__input input input_orange input_phone" placeholder="Телефон">
+		<div class="popup__checkbox checkbox checkbox_orange"><input type="checkbox"><label for="">Я согласен на обработку<br> персональных данных</label></div>
+		<button class="popup__button button button_orange">Перезвоните мне</button>
+	</div>
+	<div class="popup popup_thanks" id="popup-thanks">
+		<div class="popup__close" data-fancybox-close><span></span><span></span></div>
+		<div class="popup__head">СПАСИБО<br> за ваше обращение!</div>
+		<div class="popup__body">В ближайшее время с вами<br> свяжется наш специалист</div>
+	</div>
+	<div class="popup popup_share" id="popup-share">
+		<div class="popup__close" data-fancybox-close><span></span><span></span></div>
+		<div class="popup__title">Акция</div>
+		<div class="popup__content row">
+			<div class="popup__image col"><img src="upload/shares/popup/1.png" alt=""></div>
+			<div class="popup__text col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra  justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam  fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.  </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  bibendum  laoreet. Proin gravida dolor sit amet lacus accumsan et  viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis  natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+			</div>
+		</div>
+		<div class="popup__form">
+			<div class="popup__form-top">
+				<input type="text" class="popup__input input input_orange" placeholder="Имя">
+				<input type="text" class="popup__input input input_orange input_phone" placeholder="Телефон">
+				<input type="text" class="popup__input input input_orange" placeholder="E-mail (необязательно)">
+			</div>
+			<div class="popup__form-bottom">
+				<div class="popup__checkbox checkbox checkbox_orange"><input type="checkbox"><label for="">Я согласен на обработку<br> персональных данных</label></div>
+				<button class="popup__button button button_orange">Отправить</button>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup_policy" id="popup-policy">
+		<div class="popup__close" data-fancybox-close><span></span><span></span></div>
+		<div class="popup__title">Политика конфиденциальности</div>
+		<div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus autem, consequatur cumque, cupiditate doloribus earum eveniet ipsa ipsum iste itaque iure nesciunt nisi obcaecati optio, praesentium provident quae qui reprehenderit sequi suscipit vel voluptate. A ab alias beatae, corporis debitis deserunt dolorum ducimus error fuga ipsum libero, nisi omnis placeat quasi qui quos ratione sint ut vel voluptate? Accusamus aliquid blanditiis enim error et eveniet, molestiae nam, officia possimus praesentium quis quod quos reiciendis sit totam ullam veritatis! Accusamus, corporis dignissimos doloremque eius fugit inventore praesentium quia. Ab cumque earum eius fugiat id inventore laboriosam magni mollitia nisi nostrum pariatur possimus quaerat quam, quas saepe veritatis vitae voluptatem voluptatibus. Corporis dicta nulla omnis optio, placeat quos repellat unde. Architecto assumenda esse eum id labore laudantium libero nam, nesciunt nobis omnis perferendis placeat quia quidem sequi sint sunt veniam. Aliquam animi aut, enim in ipsam laborum mollitia quas quisquam temporibus voluptas. Adipisci amet aperiam eaque nostrum omnis quas quod! Aspernatur, delectus earum est ex excepturi exercitationem inventore modi nihil quidem quis sint tenetur ullam ut. Accusamus adipisci aliquid animi asperiores consectetur consequatur corporis debitis dicta dignissimos dolore doloremque dolores doloribus dolorum ducimus eaque earum est expedita ipsum iste laborum, minima modi necessitatibus neque numquam odit optio perspiciatis quaerat quasi quibusdam repudiandae rerum sint, sit tempore totam vitae voluptates voluptatum. Accusamus accusantium aperiam architecto, at blanditiis cumque cupiditate distinctio eaque eligendi eos explicabo impedit ipsa ipsam itaque maxime nemo, nobis officia quam reiciendis repudiandae, rerum saepe sed sint veniam voluptatem voluptates voluptatum? Accusantium aliquam aut cum cumque est fugiat harum illum ipsam labore, neque nihil nisi odit perferendis provident quod repudiandae saepe sit tempora totam veritatis? Aperiam consequatur dolorum earum eum exercitationem iste, itaque mollitia nostrum, pariatur, qui ratione reprehenderit tenetur ut. Dolore fuga itaque molestias mollitia quibusdam, quod sed. Accusamus aliquam commodi cum deserunt dolores dolorum ducimus est hic illum inventore ipsam labore minima modi mollitia nesciunt nulla, placeat praesentium quae quos ratione repellendus sint sunt tempora tempore unde ut, velit? A aliquam aliquid aspernatur beatae consequatur corporis culpa deleniti deserunt dolor dolores doloribus ducimus earum, et fugiat harum inventore ipsum iste iure maxime minus necessitatibus non, nostrum nulla, quam quia repellat reprehenderit repudiandae sit unde voluptatem? Accusantium aliquid aperiam asperiores at blanditiis corporis cupiditate delectus deserunt dicta dignissimos dolore ducimus, eaque, error esse eveniet ex explicabo fugiat harum hic laudantium magnam magni mollitia nam necessitatibus nemo nulla odit possimus quaerat recusandae rem repudiandae sapiente similique soluta suscipit ut veritatis, voluptatem? A aliquid asperiores at autem deleniti deserunt, dignissimos dolor dolorem doloremque ducimus ea earum est ex fuga, in itaque libero maiores maxime nam nesciunt nisi, perferendis provident quaerat repellendus reprehenderit saepe sequi soluta vel voluptatem voluptatum? Blanditiis cumque, distinctio enim exercitationem laudantium libero ratione recusandae sequi totam voluptates. Dicta expedita facilis, harum inventore saepe vel veniam voluptatem! Accusamus, alias amet architecto cum iusto nihil officia possimus recusandae. Adipisci eligendi unde veniam voluptas! Adipisci alias animi blanditiis ducimus eos esse et harum impedit iusto laboriosam maiores maxime nesciunt nostrum odit officiis, quia quo ratione, tempore tenetur ullam. Asperiores deleniti dolorem doloribus facere fugit ipsum iure maxime mollitia nam officia quasi quod ratione, repellat, repellendus sit temporibus voluptas? Corporis debitis delectus facilis necessitatibus pariatur rem sequi? Beatae blanditiis consequuntur distinctio dolorum magni minima rem! A aliquam, aliquid, at aut consequatur culpa doloremque ducimus eos ex impedit laboriosam minima nemo nihil numquam perspiciatis possimus, quas quisquam! Accusamus alias aperiam asperiores assumenda cum cupiditate, dolore dolorem doloribus, enim eos, error exercitationem expedita fugiat ipsa ipsam iure labore libero maxime molestiae neque nostrum numquam odio odit omnis quas quos ratione recusandae sit tempora tempore totam ut velit veniam vero voluptate voluptatem voluptatibus. Asperiores consectetur, culpa, cum cumque debitis dolorem eum excepturi facilis impedit ipsam iure laboriosam laborum molestiae nemo nesciunt numquam odit perferendis qui soluta voluptatibus. Asperiores deserunt, dolores expedita odit qui sed soluta! Accusamus aspernatur assumenda atque commodi deserunt dicta dolore ea enim fugiat illum ipsum itaque iusto labore laborum, molestias neque nesciunt non odit optio pariatur porro quam quasi qui quidem ratione recusandae sapiente sed sit tempora vitae voluptate voluptates voluptatibus voluptatum! Doloremque ea eaque harum ipsum magnam molestiae nesciunt obcaecati omnis possimus praesentium provident quidem soluta, suscipit! Beatae consequuntur cupiditate enim facere fugiat illum ipsum laudantium molestiae nesciunt officiis optio placeat quas repellat, temporibus vero? Accusantium, aliquid autem cum deleniti dolore, ducimus ea et maiores odio pariatur perspiciatis quam quo recusandae rerum voluptatem! Aspernatur at deleniti doloribus esse facere ipsa iste iusto, natus nulla ratione rerum suscipit tempore vero! Aperiam asperiores commodi culpa cumque cupiditate doloremque dolores doloribus dolorum eos facere fugit harum illum incidunt ipsum itaque molestiae molestias necessitatibus nemo officiis possimus qui quis quisquam quos ratione recusandae reiciendis repellendus reprehenderit sed sint sit tenetur vel velit, voluptas. A animi aspernatur autem blanditiis consectetur dolor dolore doloribus dolorum eligendi est facere ipsa iusto laudantium maiores, nam nesciunt nobis non quae quo quos saepe sequi sit veniam. Alias atque cum deleniti dolorum, esse hic in ipsam minus nulla, numquam odio quas quod rerum tempora veritatis? Amet, aspernatur itaque labore maxime pariatur placeat qui ratione sunt totam veritatis. Accusamus atque, dolore enim necessitatibus nulla pariatur provident ullam. Ad aspernatur cumque deleniti doloribus esse expedita illum libero molestias mollitia natus nihil nisi officiis placeat quia ratione rerum saepe, sunt temporibus. Consectetur dolore, doloribus dolorum laudantium neque non, obcaecati odio provident quas quis recusandae repellat sit soluta tempore vel! Ab ducimus eaque earum eligendi iste laboriosam nam nemo officia. A accusamus ad aliquid asperiores assumenda autem consectetur deleniti distinctio earum eveniet explicabo facere harum illum ipsa itaque iure laborum laudantium magnam modi odio, omnis quae quaerat quia quis sed ullam unde vitae! A aperiam at eligendi est, excepturi id in ipsa laudantium minus modi, natus neque, non omnis perspiciatis possimus repudiandae vel. A amet aperiam consequatur dicta dignissimos et fugit in incidunt laudantium maxime minima nisi, obcaecati, quas quasi quibusdam quidem ratione reiciendis tempora vitae voluptatum. Animi id molestias perferendis placeat porro quae quod similique. Aperiam dolorem hic inventore ipsum nesciunt ratione recusandae reprehenderit.</div>
+	</div>
+</body>
+</html>
