@@ -172,7 +172,7 @@ img
   text-align: center
   transition: .3s
   font-weight: 600
-  border-radius: 25px
+  border-radius: 50px
   color: white
   &_red
     background-color: #d94409
@@ -311,6 +311,9 @@ img
   &__button
     line-height: 48px
     width: 180px
+  &_shadow
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.12)
+
 
 
 
@@ -1208,7 +1211,8 @@ img
         box-shadow: 0 3px 8px rgba(0, 0, 0, 0.17)
   &_thanks
     width: 340px
-    text-align: center
+    text-align: center !important
+    padding: 0 !important
     .popup
       &__head
         padding-top: 65px
@@ -1285,3 +1289,71 @@ img
           margin-bottom: 20px
           &:last-of-type
             margin-bottom: 0
+
+.order
+  &-list
+    padding-top: 90px
+    padding-bottom: 105px
+    &__title
+      margin-bottom: 60px
+    &__list
+      margin-bottom: 50px
+      thead
+        td
+          color: $color-1
+          background: none
+          padding-top: 24px
+          padding-bottom: 24px
+      tbody
+        td
+          &:nth-of-type(1)
+            text-align: center
+          &:nth-of-type(2)
+            text-align: left
+    &__sum
+      width: 590px
+      margin-left: auto
+      margin-bottom: 60px
+    &__button
+      width: 265px
+      line-height: 54px
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2)
+      &.button_orange
+        float: left
+      &.button_red
+        float: right
+  &-data
+    padding-top: 88px
+    padding-bottom: 105px
+    background-color: #f7f7f7
+    &__title
+      margin-bottom: 60px
+    &__subtitle
+      font-weight: 600
+      width: 274px
+      text-align: center
+      margin-bottom: 32px
+    &__col
+      width: 335px
+      &:nth-of-type(1)
+        margin-right: 180px
+    &__input
+      font-size: 14px
+      font-weight: 300
+      margin-bottom: 25px
+      margin-left: 0
+      display: block
+    &__textarea
+      font-size: 14px
+      font-weight: 300
+      min-height: 120px
+      margin-bottom: 95px
+    &__checkbox
+      label
+        font-size: 14px
+    &__button
+      margin-left: 0
+      line-height: 59px
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2)
+    &__input, &__textarea, &__button
+      width: 274px

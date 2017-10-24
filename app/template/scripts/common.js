@@ -48,17 +48,26 @@ $(document).ready(function($) {
 		parent.toggleClass('faq__item_active')
 	});
 
-	$(".panel__nav a").click(function (event) {
-		event.preventDefault();
+	$(".panel__nav a, .order-list__button-link").click(function (event) {
+
 
 		var id  = $(this).attr('href');
 
 		if(id.charAt(0) == '#'){
+			event.preventDefault();
 			var top = $(id).offset().top;
 			$('body,html').animate({scrollTop: top}, 1500);
 		}
 
 	});
+
+	$('.popup__button').click(function () {
+		parent.jQuery.fancybox.getInstance().close();
+		$.fancybox.open({
+			src  : '#popup-thanks',
+			type : 'inline'
+		});
+	})
 
 	$('.input_phone').mask('+7 (999) 999-99-99');
 });
