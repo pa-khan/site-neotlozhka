@@ -30,7 +30,7 @@
 <body>
 	<div class="panel">
 		<div class="container row">
-			<div class="panel__logo col"><a href="/"><img src="upload/logo.png" alt=""></a></div>
+			<div class="panel__logo col"><img src="upload/logo.png" alt=""></div>
 			<div class="panel__nav col">
 				<ul>
 					<li><a href="#services">Услуги</a></li>
@@ -315,7 +315,7 @@
 							<td><i class="icon icon-checked"></i></td>
 							<td><i class="icon icon-checked"></i></td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -327,7 +327,7 @@
 							<td><i class="icon icon-checked"></i></td>
 							<td></td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -339,7 +339,7 @@
 							<td class="fw600">4</td>
 							<td></td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -351,7 +351,7 @@
 							<td><i class="icon icon-checked"></i></td>
 							<td></td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -363,7 +363,7 @@
 							<td><i class="icon icon-checked"></i></td>
 							<td></td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -375,7 +375,7 @@
 							<td></td>
 							<td class="fw600">5</td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -387,7 +387,7 @@
 							<td><i class="icon icon-checked"></i></td>
 							<td></td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -399,7 +399,7 @@
 							<td><i class="icon icon-checked"></i></td>
 							<td></td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -411,7 +411,7 @@
 							<td><i class="icon icon-checked"></i></td>
 							<td><i class="icon icon-checked"></i></td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="yes" data-price-value="500">Да</option>
 									<option value="no" data-price-value="0">Нет</option>
 								</select>
@@ -423,7 +423,7 @@
 							<td class="fw600">2 раза/нед.</td>
 							<td class="fw600">1 раз/нед.</td>
 							<td>
-								<select class="select">
+								<select class="select select-calc">
 									<option value="1" data-price-value="3000">Ежедневно</option>
 									<option value="2" data-price-value="500">1 раз/нед</option>
 									<option value="3" data-price-value="1500">2 раз/нед</option>
@@ -443,21 +443,21 @@
 							<td class="fw600">56 000 руб</td>
 							<td class="fw600">56 000 руб</td>
 							<td class="fw600">56 000 руб</td>
-							<td class="fw600">56 000 руб</td>
+							<td class="fw600"><span class="sum-calc">56 000</span> руб</td>
 						</tr>
 						<tr>
 							<td class="tar">Скидка</td>
 							<td class="fw600">15 %</td>
 							<td class="fw600">20 %</td>
 							<td class="fw600">30 %</td>
-							<td class="fw600">20 %</td>
+							<td class="fw600"><span class="discount-calc">20</span> %</td>
 						</tr>
 						<tr>
 							<td class="tar">Итого стоимость со скидкой</td>
-							<td class="fw600">56 000 руб</td>
-							<td class="fw600">86 000 руб</td>
-							<td class="fw600">56 000 руб</td>
-							<td class="fw600">46 000 руб</td>
+							<td class="fw600"><span class="total-count" data-unit="1">86 000</span> руб</td>
+							<td class="fw600"><span class="total-count" data-unit="2">56 000</span> руб</td>
+							<td class="fw600"><span class="total-count" data-unit="3">56 000</span> руб</td>
+							<td class="fw600"><span class="total-calc total-count" data-unit="4">46 000</span> руб</td>
 						</tr>
 					</tbody>
 					<tfoot>
@@ -469,27 +469,27 @@
 								<div class="price__currency-select">
 									<p>Выберите валюту нашей страны</p>
 									<select id="select-currency" class="select">
-										<option value="">Доллар</option>
-										<option value="">Рубль</option>
-										<option value="">Доллар</option>
-										<option value="">Фунт</option>
+										<option value="dollar" data-currency-value="60" selected>Доллар</option>
+										<option value="ruble" data-currency-value="1">Рубль</option>
+										<option value="euro" data-currency-value="75">Евро</option>
+										<option value="pound" data-currency-value="90">Фунт</option>
 									</select>
 								</div>
 							</td>
 							<td>
-								<div class="price__currency" data-currency-ruble="" data-currency-dollar="" data-currency-euro="" data-currency-pound="">$ 990.00</div>
+								<div class="price__currency" data-unit="1">1</div>
 								<div class="price__radio radio radio_green"><input type="radio" name="type" value="1"><label>Выбрать</label></div>
 							</td>
 							<td>
-								<div class="price__currency" data-currency-ruble="" data-currency-dollar="" data-currency-euro="" data-currency-pound="">$ 990.00</div>
+								<div class="price__currency" data-unit="2">2</div>
 								<div class="price__radio radio radio_green"><input type="radio" name="type" value="2"><label>Выбрать</label></div>
 							</td>
 							<td>
-								<div class="price__currency" data-currency-ruble="" data-currency-dollar="" data-currency-euro="" data-currency-pound="">$ 990.00</div>
+								<div class="price__currency" data-unit="3">3</div>
 								<div class="price__radio radio radio_green"><input type="radio" name="type" value="3"><label>Выбрать</label></div>
 							</td>
 							<td>
-								<div class="price__currency" data-currency-ruble="" data-currency-dollar="" data-currency-euro="" data-currency-pound="">$ 990.00</div>
+								<div class="price__currency" data-unit="4">4</div>
 								<div class="price__radio radio radio_green"><input type="radio" name="type" value="4"><label>Выбрать</label></div>
 							</td>
 						</tr>

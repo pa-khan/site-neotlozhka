@@ -551,6 +551,9 @@ img {
       margin-right: 28px; }
       .panel__nav li:last-of-type {
         margin-right: 0; }
+    .panel__nav a:hover {
+      color: #d94409;
+      border-color: #d94409; }
   .panel__call {
     float: right;
     text-align: center;
@@ -1580,6 +1583,10 @@ img {
     margin-bottom: 95px; }
   .order-data__checkbox label {
     font-size: 14px; }
+    .order-data__checkbox label:after {
+      width: 9px;
+      height: 9px;
+      border: 2px solid #ff7c1e; }
   .order-data__button {
     margin-left: 0;
     line-height: 59px;
