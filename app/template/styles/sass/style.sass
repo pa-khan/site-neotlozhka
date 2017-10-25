@@ -287,12 +287,16 @@ img
 
 
 
-
+.mobile
+  display: none
 
 
 .panel
+  position: relative
   padding-top: 31px
   padding-bottom: 17px
+  .container
+    position: relative
   &__nav
     padding-top: 17px
     margin-left: 91px
@@ -728,6 +732,10 @@ img
         padding-top: 57px
         &:nth-of-type(1)
           padding-top: 0
+    &-three
+      td
+        padding-top: 45px
+
   &__currency
     width: 150px
     line-height: 39px

@@ -8,7 +8,21 @@ $(document).ready(function($) {
 	$('.specialists__list').slick({
 		slidesToShow: 3,
 		prevArrow: '<button type="button" class="slick-prev slick-arrow"><i class="icon icon-arrow-left"></i></button>',
-		nextArrow: '<button type="button" class="slick-next slick-arrow"><i class="icon icon-arrow-right"></i></button>'
+		nextArrow: '<button type="button" class="slick-next slick-arrow"><i class="icon icon-arrow-right"></i></button>',
+		responsive: [
+			{
+				breakpoint: 1205,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 985,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 	$('.shares').slick({
@@ -18,7 +32,18 @@ $(document).ready(function($) {
 
 	$('.reviews__list').slick({
 		dots: true,
-		arrows: false
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 985,
+				settings: {
+					arrows: true,
+					dots: false,
+					prevArrow: '<button type="button" class="slick-prev slick-arrow"><i class="icon icon-arrow-left"></i></button>',
+					nextArrow: '<button type="button" class="slick-next slick-arrow"><i class="icon icon-arrow-right"></i></button>'
+				}
+			}
+		]
 	});
 
 	function valueElementForm(nameElement) {
@@ -160,4 +185,33 @@ $(document).ready(function($) {
 		currency();
 	})
 
+
+
+	$('.mobile-btn').click(function () {
+		$('.panel__nav').slideToggle(300);
+	})
+
+
+
+	/* Selector */
+	$('.selector__item').each(function (index, el) {
+		$(this).attr('data-table-td', index + 2);
+		var attr = $(this).attr('data-table-td');
+		if(attr == 2){
+			$(this).addClass('.selector__item_selected')
+			$('.price__table td:nth-of-type('+ attr +')').addClass('show');
+		}
+	});
+	$('.selector__item').click(function () {
+		var attr = $(this).attr('data-table-td');
+		if(!$(this).hasClass('selector__item_selected')){
+			$('.selector__item_selected').removeClass('selector__item_selected');
+			$('.price__table td').removeClass('show')
+			$(this).addClass('.selector__item_selected');
+			$('.price__table td:nth-of-type('+ attr +')').addClass('show');
+		}
+	})
+	$('.selector__title, .selector__item').click(function () {
+		$('.selector__list').toggle();
+	})
 });

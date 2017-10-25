@@ -541,9 +541,15 @@ img {
   .title_none:after {
     display: none; }
 
+.mobile {
+  display: none; }
+
 .panel {
+  position: relative;
   padding-top: 31px;
   padding-bottom: 17px; }
+  .panel .container {
+    position: relative; }
   .panel__nav {
     padding-top: 17px;
     margin-left: 91px; }
@@ -954,6 +960,8 @@ img {
     padding-top: 57px; }
     .price__table-two td:nth-of-type(1) {
       padding-top: 0; }
+  .price__table-three td {
+    padding-top: 45px; }
   .price__currency {
     width: 150px;
     line-height: 39px;
