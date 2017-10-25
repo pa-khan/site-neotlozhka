@@ -292,9 +292,15 @@ img
 
 
 .panel
-  position: relative
+  z-index: 1000
+  width: 100%
+  left: 0
+  top: 0
+  position: fixed
   padding-top: 31px
   padding-bottom: 17px
+  background: white
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8)
   .container
     position: relative
   &__nav
@@ -326,7 +332,7 @@ img
 
 
 .header
-
+  margin-top: 128px
 .slider
 
 .slide

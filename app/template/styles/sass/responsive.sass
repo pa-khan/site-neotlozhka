@@ -21,8 +21,9 @@
 		max-width: 100%
 	.container
 		width: 950px
+	.header
+		margin-top: 102px
 	.panel
-		z-index: 2
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8)
 		padding-top: 20px
 		&__phone
@@ -146,6 +147,7 @@
 	.container
 		width: 100%
 	.panel
+		position: relative
 		&__nav
 			display: none
 			position: absolute
@@ -170,7 +172,8 @@
 				font-size: 30px
 		&__button
 			font-size: 24px
-
+	.header
+		margin-top: 0
 @media screen and (max-width: 985px)
 	.input, .textarea, .button
 		border-radius: 0 !important

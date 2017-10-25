@@ -23,8 +23,9 @@
     max-width: 100%; }
   .container {
     width: 950px; }
+  .header {
+    margin-top: 102px; }
   .panel {
-    z-index: 2;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     padding-top: 20px; }
@@ -126,30 +127,34 @@
     display: block; }
   .container {
     width: 100%; }
-  .panel__nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    margin-top: 22px;
-    background: white;
-    left: 0;
-    width: 100%;
-    margin-left: 0;
-    padding: 15px; }
-    .panel__nav li {
-      display: block;
-      margin-right: 0; }
-    .panel__nav a {
-      font-size: 26px; }
-  .panel__call {
-    margin-right: 30%; }
-  .panel__phone {
-    line-height: 20px;
-    margin-bottom: 2px; }
-    .panel__phone a {
-      font-size: 30px; }
-  .panel__button {
-    font-size: 24px; } }
+  .panel {
+    position: relative; }
+    .panel__nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      margin-top: 22px;
+      background: white;
+      left: 0;
+      width: 100%;
+      margin-left: 0;
+      padding: 15px; }
+      .panel__nav li {
+        display: block;
+        margin-right: 0; }
+      .panel__nav a {
+        font-size: 26px; }
+    .panel__call {
+      margin-right: 30%; }
+    .panel__phone {
+      line-height: 20px;
+      margin-bottom: 2px; }
+      .panel__phone a {
+        font-size: 30px; }
+    .panel__button {
+      font-size: 24px; }
+  .header {
+    margin-top: 0; } }
 
 @media screen and (max-width: 985px) {
   .input, .textarea, .button {
