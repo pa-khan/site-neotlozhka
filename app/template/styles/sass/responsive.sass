@@ -32,10 +32,20 @@
 				border-bottom: none
 				margin-bottom: 0
 		&__nav
-			margin-left: 20px
+			display: none
+			position: absolute
+			top: 100%
+			margin-top: 18px
+			background: rgba(255,255,255,1)
+			left: 0
+			width: 100%
+			margin-left: 0
+			padding: 15px
 			li
-				margin-right: 16px
-				font-size: 14px
+				display: block
+				margin-right: 0
+			a
+				font-size: 26px
 		&__button
 			display: inline-block
 			color: #d8751c
@@ -48,7 +58,12 @@
 			&:hover
 				background: inherit
 				border-color: transparent
-				
+		&__call
+			margin-right: 30%
+		+ .main
+			margin-top: 102px
+	.mobile-btn
+		display: block
 	.services
 		&__block
 			&_top
@@ -76,6 +91,7 @@
 				.steps
 					&__text
 						padding-top: 35px
+
 
 		&__num
 			font-size: 100px !important
@@ -148,21 +164,7 @@
 		width: 100%
 	.panel
 		position: relative
-		&__nav
-			display: none
-			position: absolute
-			top: 100%
-			margin-top: 22px
-			background: rgba(255,255,255,1)
-			left: 0
-			width: 100%
-			margin-left: 0
-			padding: 15px
-			li
-				display: block
-				margin-right: 0
-			a
-				font-size: 26px
+		
 		&__call
 			margin-right: 30%
 		&__phone
@@ -172,9 +174,10 @@
 				font-size: 30px
 		&__button
 			font-size: 24px
+		+ .main
+			margin-top: 0
 	.header
 		margin-top: 0
-@media screen and (max-width: 985px)
 	.input, .textarea, .button
 		border-radius: 0 !important
 		width: 280px
@@ -217,16 +220,23 @@
 	.slider
 		background-color: #405139
 	.slide
-		background: none !important
+		position: relative
 		text-align: center
-		padding-top: 25px
+		background-size: 100% auto
+		padding-top: 36%
+		padding-bottom: 80px
 		&__button
 			margin-left: auto
 		&__text
+			top: 0
+			left: 0
+			position: absolute
 			font-size: 20px
 			width: 100%
-			max-width: 320px
 			margin-right: auto
+			text-align: left
+			padding-left: 15px
+			padding-top: 25px
 		&__title
 			font-size: 30px
 			line-height: 34px
@@ -266,20 +276,36 @@
 		&__col
 			display: block
 			width: 100% !important
+			&:nth-of-type(1)
+				&:after
+					content: 'Готовы подробно рассказать,  что в себя включают и чем  отличаются  программы'
+					display: block
+					max-width: 402px
+					width: 100%
+					color: white
+					margin-left: auto
+					margin-right: auto
+					padding: 30px 20px
+					background-color: #f98e3c
+					box-sizing: border-box
+					margin-top: 30px
+					font-size: 16px
+
+
 		&__item
 			border: 2px dashed #f3821c
 			max-width: 400px
 			margin-left: auto
 			margin-right: auto
+			min-height: 95px
 
 		&__text
 			padding: 10px 10px 20px !important
 			border: none
 			min-height: 1px !important
-			width: 100% !important
-			text-align: center
+			width: calc(100% - 80px) !important
 		&__num
-			line-height: 100px !important
+			line-height: 58px !important
 			margin-bottom: 15px
 	.consultation
 		background-image: none
@@ -331,10 +357,11 @@
 				height: auto
 				width: auto
 				border: none
-				line-height: 48px
+				line-height: 48px !important
 				margin-top: 0
 			&-content
-				width: 100%
+				width: calc(100% - 10px)
+				padding-left: 10px
 		&__table
 			td
 				display: none
@@ -371,6 +398,7 @@
 			margin-right: 15px
 			cursor: pointer
 		&__list
+			z-index: 100
 			display: none
 			position: absolute
 			right: 15px

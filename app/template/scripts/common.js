@@ -209,9 +209,18 @@ $(document).ready(function($) {
 			$('.price__table td').removeClass('show')
 			$(this).addClass('.selector__item_selected');
 			$('.price__table td:nth-of-type('+ attr +')').addClass('show');
+
 		}
+		$('.price__desc').hide()
+		$('.price__desc[data-price-desc = ' + attr + ']').show()
 	})
 	$('.selector__title, .selector__item').click(function () {
 		$('.selector__list').toggle();
 	})
+
+	$('td[data-price-desc]').click(function(event) {
+		var attr = $(this).attr('data-price-desc');
+		$('.price__desc').hide()
+		$('.price__desc[data-price-desc = ' + attr + ']').show()
+	});
 });

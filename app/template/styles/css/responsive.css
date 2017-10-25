@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mobile-btn {
   width: 60px;
   height: 46px;
@@ -34,10 +35,20 @@
       border-bottom: none;
       margin-bottom: 0; }
     .panel__nav {
-      margin-left: 20px; }
+      display: none;
+      position: absolute;
+      top: 100%;
+      margin-top: 18px;
+      background: white;
+      left: 0;
+      width: 100%;
+      margin-left: 0;
+      padding: 15px; }
       .panel__nav li {
-        margin-right: 16px;
-        font-size: 14px; }
+        display: block;
+        margin-right: 0; }
+      .panel__nav a {
+        font-size: 26px; }
     .panel__button {
       display: inline-block;
       color: #d8751c;
@@ -51,6 +62,12 @@
       .panel__button:hover {
         background: inherit;
         border-color: transparent; }
+    .panel__call {
+      margin-right: 30%; }
+    .panel + .main {
+      margin-top: 102px; }
+  .mobile-btn {
+    display: block; }
   .services__block_top .services__list:before {
     width: 790px; }
   .services__block_bottom .services__list:before {
@@ -129,21 +146,6 @@
     width: 100%; }
   .panel {
     position: relative; }
-    .panel__nav {
-      display: none;
-      position: absolute;
-      top: 100%;
-      margin-top: 22px;
-      background: white;
-      left: 0;
-      width: 100%;
-      margin-left: 0;
-      padding: 15px; }
-      .panel__nav li {
-        display: block;
-        margin-right: 0; }
-      .panel__nav a {
-        font-size: 26px; }
     .panel__call {
       margin-right: 30%; }
     .panel__phone {
@@ -153,10 +155,10 @@
         font-size: 30px; }
     .panel__button {
       font-size: 24px; }
+    .panel + .main {
+      margin-top: 0; }
   .header {
-    margin-top: 0; } }
-
-@media screen and (max-width: 985px) {
+    margin-top: 0; }
   .input, .textarea, .button {
     -webkit-border-radius: 0 !important;
             border-radius: 0 !important;
@@ -201,16 +203,23 @@
   .slider {
     background-color: #405139; }
   .slide {
-    background: none !important;
+    position: relative;
     text-align: center;
-    padding-top: 25px; }
+    background-size: 100% auto;
+    padding-top: 36%;
+    padding-bottom: 80px; }
     .slide__button {
       margin-left: auto; }
     .slide__text {
+      top: 0;
+      left: 0;
+      position: absolute;
       font-size: 20px;
       width: 100%;
-      max-width: 320px;
-      margin-right: auto; }
+      margin-right: auto;
+      text-align: left;
+      padding-left: 15px;
+      padding-top: 25px; }
     .slide__title {
       font-size: 30px;
       line-height: 34px; }
@@ -247,19 +256,34 @@
     .steps__col {
       display: block;
       width: 100% !important; }
+      .steps__col:nth-of-type(1):after {
+        content: 'Готовы подробно рассказать,  что в себя включают и чем  отличаются  программы';
+        display: block;
+        max-width: 402px;
+        width: 100%;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 20px;
+        background-color: #f98e3c;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin-top: 30px;
+        font-size: 16px; }
     .steps__item {
       border: 2px dashed #f3821c;
       max-width: 400px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      min-height: 95px; }
     .steps__text {
       padding: 10px 10px 20px !important;
       border: none;
       min-height: 1px !important;
-      width: 100% !important;
-      text-align: center; }
+      width: -webkit-calc(100% - 80px) !important;
+      width: calc(100% - 80px) !important; }
     .steps__num {
-      line-height: 100px !important;
+      line-height: 58px !important;
       margin-bottom: 15px; }
   .consultation {
     background-image: none;
@@ -311,10 +335,12 @@
         height: auto;
         width: auto;
         border: none;
-        line-height: 48px;
+        line-height: 48px !important;
         margin-top: 0; }
       .price__desc-content {
-        width: 100%; }
+        width: -webkit-calc(100% - 10px);
+        width: calc(100% - 10px);
+        padding-left: 10px; }
     .price__table td {
       display: none; }
       .price__table td:nth-of-type(1), .price__table td.show {
@@ -350,6 +376,7 @@
       margin-right: 15px;
       cursor: pointer; }
     .selector__list {
+      z-index: 100;
       display: none;
       position: absolute;
       right: 15px;

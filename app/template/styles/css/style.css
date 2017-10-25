@@ -581,6 +581,8 @@ img {
   .panel_shadow {
     -webkit-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.12);
             box-shadow: 0 2px 13px rgba(0, 0, 0, 0.12); }
+  .panel + .main {
+    margin-top: 128px; }
 
 .header {
   margin-top: 128px; }
@@ -615,7 +617,7 @@ img {
   .slide__text {
     position: relative;
     margin-left: auto;
-    width: 195px;
+    width: 205px;
     font-style: italic; }
 
 .dots {
@@ -938,7 +940,10 @@ img {
     padding-top: 45px;
     padding-bottom: 40px;
     margin-bottom: 65px;
-    padding-right: 70px; }
+    padding-right: 70px;
+    display: none; }
+    .price__desc:nth-of-type(2) {
+      display: block; }
     .price__desc-content {
       width: 650px; }
     .price__desc-title {
@@ -963,6 +968,10 @@ img {
       font-family: "Georgia", sans-serif;
       font-size: 140px;
       margin-top: 40px; }
+    .price__desc .lh110 {
+      line-height: 110px; }
+    .price__desc .lh105 {
+      line-height: 105px; }
   .price__table-one td {
     padding-top: 15px; }
   .price__table-two td {
@@ -972,6 +981,8 @@ img {
       padding-top: 0; }
   .price__table-three td {
     padding-top: 45px; }
+  .price__table [data-price-desc] {
+    cursor: pointer; }
   .price__currency {
     width: 150px;
     line-height: 39px;

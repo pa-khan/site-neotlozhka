@@ -49,10 +49,6 @@
 		</div>
 	</div>
 	<header class="header">
-		<div class="mobile-content mobile">
-			<div class="mobile-content__title">"ПЕТЕРБУРГСКАЯ НЕОТЛОЖКА"</div>
-			<div class="mobile-content__text"> - единственная в России  и Санкт-Петербурге  медицинская компания  предоставляющая  комплексные услуги  по медико-социальной заботе  за родителями, дети которых  находятся в других городах  или за границей</div>
-		</div>
 		<div class="slider dots">
 			<div class="slide" style="background-image: url('upload/slider/1.png')">
 				<div class="slide__content">
@@ -72,7 +68,7 @@
 						<div class="slide__subtitle">Поручите это нам!</div>
 						<div class="slide__desc">До 30 ноября 2017 действует Акция!</div>
 						<a class="slide__button button button_orange" data-fancybox data-src="#popup-share" href="javascript:;">Подробнее</a>
-						<div class="slide__text">Организуем осмотр <br>любого врача на дому</div>
+						<div class="slide__text">Решим любую экстренную<br> ситуацию со здоровьем</div>
 					</div>
 				</div>
 			</div>
@@ -83,10 +79,14 @@
 						<div class="slide__subtitle">Поручите это нам!</div>
 						<div class="slide__desc">До 30 ноября 2017 действует Акция!</div>
 						<a class="slide__button button button_orange" data-fancybox data-src="#popup-share" href="javascript:;">Подробнее</a>
-						<div class="slide__text">Организуем осмотр <br>любого врача на дому</div>
+						<div class="slide__text">Все услуги оказываем на <br>дому у постели пациента</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="mobile-content mobile">
+			<div class="mobile-content__title">"ПЕТЕРБУРГСКАЯ НЕОТЛОЖКА"</div>
+			<div class="mobile-content__text"> - единственная в России  и Санкт-Петербурге  медицинская компания  предоставляющая  комплексные услуги  по медико-социальной заботе  за родителями, дети которых  находятся в других городах  или за границей</div>
 		</div>
 	</header>
 	<main class="main">
@@ -290,7 +290,7 @@
 		<div class="price" id="prices">
 			<div class="container">
 				<div class="price__title title">Сколько это стоит?</div>
-				<div class="price__desc row center">
+				<div class="price__desc row center" data-price-desc="1">
 					<div class="price__desc-content col">
 						<div class="price__desc-title">Программа "ХОЧУ ПОПРОБОВАТЬ"</div>
 						<div class="price__desc-text">
@@ -302,6 +302,45 @@
 						</div>
 					</div>
 					<div class="price__desc-num col">1</div>
+				</div>
+				<div class="price__desc row center" data-price-desc="2">
+					<div class="price__desc-content col">
+						<div class="price__desc-title">Программа "Здоровые родители"</div>
+						<div class="price__desc-text">
+							<p>- визит врача: беседа, осмотр, изучение  медицинской документации, составление плана лечения и контроля за здоровьем</p>
+							<p>- ежедневный контроль самочувствия и приема препаратов</p>
+							<p>- покупка \ доставка медикаментов</p>
+							<p class="xs">* срок действия программы - 1 месяц</p>
+							<p class="xs">* стоимость: 5000 руб</p>
+						</div>
+					</div>
+					<div class="price__desc-num col">2</div>
+				</div>
+				<div class="price__desc row center" data-price-desc="3">
+					<div class="price__desc-content col">
+						<div class="price__desc-title">Программа "ЗАБОТА"</div>
+						<div class="price__desc-text">
+							<p>- визит врача: беседа, осмотр, изучение  медицинской документации, составление<br>плана лечения и контроля за здоровьем</p>
+							<p>- ежедневный контроль самочувствия и приема препаратов</p>
+							<p>- покупка \ доставка медикаментов</p>
+							<p class="xs">* срок действия программы - 1 месяц</p>
+							<p class="xs">* стоимость: 5000 руб</p>
+						</div>
+					</div>
+					<div class="price__desc-num col lh110">3</div>
+				</div>
+				<div class="price__desc row center" data-price-desc="4">
+					<div class="price__desc-content col">
+						<div class="price__desc-title">Программа "БЕРЕЖНЫЙ УХОД"</div>
+						<div class="price__desc-text">
+							<p>- визит врача: беседа, осмотр, изучение  медицинской документации, составление<br>плана лечения и контроля за здоровьем</p>
+							<p>- ежедневный контроль самочувствия и приема препаратов</p>
+							<p>- покупка \ доставка медикаментов</p>
+							<p class="xs">* срок действия программы - 1 месяц</p>
+							<p class="xs">* стоимость: 5000 руб</p>
+						</div>
+					</div>
+					<div class="price__desc-num col lh105">4</div>
 				</div>
 				<div class="price__choose mobile">
 					<div class="price__choose-title">Выберите программу</div>
@@ -319,9 +358,9 @@
 					<thead>
 						<tr>
 							<td>Услуги</td>
-							<td>Здоровые<br> родители</td>
-							<td>Забота</td>
-							<td>Бережный <br>уход</td>
+							<td data-price-desc="2">Здоровые<br> родители</td>
+							<td data-price-desc="3">Забота</td>
+							<td data-price-desc="4">Бережный <br>уход</td>
 							<td>Составьте <br>свою программу</td>
 						</tr>
 					</thead>
@@ -357,8 +396,10 @@
 							<td></td>
 							<td>
 								<select class="select select-calc">
-									<option value="yes" data-price-value="500">Да</option>
-									<option value="no" data-price-value="0">Нет</option>
+									<option value="2" data-price-value="1000">2</option>
+									<option value="3" data-price-value="2000">3</option>
+									<option value="4" data-price-value="3000">4</option>
+									<option value="5" data-price-value="4000">5</option>
 								</select>
 							</td>
 						</tr>
@@ -453,7 +494,15 @@
 							<td class="fw600">20 000 руб</td>
 							<td class="fw600">20 000 руб</td>
 							<td class="fw600">20 000 руб</td>
-							<td class="fw600">20 000 руб</td>
+							<td class="fw600">
+								<select class="select select-calc">
+									<option value="1" data-price-value="0">Нет</option>
+									<option value="2" data-price-value="500">10000 руб</option>
+									<option value="3" data-price-value="1000" selected="">20000 руб</option>
+									<option value="4" data-price-value="2000">30000 руб</option>
+									<option value="5" data-price-value="5000">40000 руб</option>
+								</select>
+							</td>
 						</tr>
 						<tr>
 							<td class="tar">Итого стоимость</td>
